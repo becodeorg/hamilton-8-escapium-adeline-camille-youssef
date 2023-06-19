@@ -1,0 +1,10 @@
+@import '../Abstracts/_variables.scss';
+
+@media (max-width: 768px) {
+    .featuredRooms .room {
+      flex-wrap: wrap;
+      background-color: aliceblue;
+    }
+    
+  }
+  

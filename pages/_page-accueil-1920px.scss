@@ -1,0 +1,63 @@
+@import '../Abstracts/_variables.scss';
+
+.main-homepage {
+font-family: $FontParagraphs;
+ margin: 0%;
+ padding: 0%;
+ background-color:$darkest-backgrounds;
+ color: aliceblue;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+
+ ul, ol {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+  }
+ .featuredRooms{
+    padding-top: 27px;
+    hr{
+        max-width: 3%;
+        height:5px;
+    }  
+    .room{
+        display: flex;
+        margin: 5% 25% 5% 25%;
+    img {
+        margin: 15% 0 15% 0;
+        max-width: 100%;
+        max-height: auto;
+    }
+    &__card {
+        background-color: $dark-background;
+        box-shadow: 0 2px 50px rgb(0, 0, 0);
+        padding: 25px;
+        .card__padlock--grey{
+            color: $global-font-color;
+        }
+        .card__padlock--red{
+            color: $red;
+        }
+        h2 {
+            font-size: 44px;
+            
+            &:hover {
+              color: $red;
+            }
+          }
+          
+        ul {
+            display: flex;
+            li {
+                margin: 5px;
+            }
+        }
+    }
+       
+    }
+ }
+ 
+}
