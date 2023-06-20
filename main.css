@@ -1,117 +1,112 @@
 @import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap");
-.footer__container {
+.footer {
   /* background-image: url('images/gallery/slide-3.jpg');*/
   background-color: rgba(0, 0, 0, 0.5);
+  /* color: variables.$global-font-color;*/
 }
-.footer__container span {
+.footer span {
   color: white;
 }
 @media (max-width: 412px) {
-  .footer__container {
+  .footer {
     display: grid;
     grid-template-columns: repeat 2, 1fr;
     padding: 50px;
   }
-  .footer__container h2 {
+  .footer h2 {
     font-family: Montserrat;
     font-size: 19px;
     color: white;
   }
-  .footer__container h3 {
+  .footer h3 {
     color: #717171;
     font-family: Montserrat;
     font-size: 21px;
     font-weight: 200;
   }
-  .footer__container h3 i {
+  .footer h3 i {
     color: red;
   }
-  .footer__container p {
+  .footer p {
     font-family: Hind;
     font-size: 14px;
   }
 }
 @media (min-width: 413px) and (max-width: 767px) {
-  .footer__container {
+  .footer {
     display: grid;
     grid-template-columns: repeat 4, 1fr;
     padding: 50px;
   }
-  .footer__container h2 {
+  .footer h2 {
     font-family: Montserrat;
     font-size: 19px;
     color: white;
   }
-  .footer__container h3 {
+  .footer h3 {
     color: #717171;
     font-family: Montserrat;
     font-size: 21px;
     font-weight: 200;
   }
-  .footer__container h3 i {
+  .footer h3 i {
     color: red;
   }
-  .footer__container p {
+  .footer p {
     font-family: Hind;
     font-size: 14px;
   }
 }
 @media (min-width: 768px) {
-  .footer__container {
+  .footer {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     padding: 200px 100px;
   }
-  .footer__container h2 {
+  .footer h2 {
     font-family: Montserrat;
     font-size: 19px;
     color: white;
   }
-  .footer__container h3 {
+  .footer h3 {
     color: #717171;
     font-family: Montserrat;
-    font-size: 20px;
+    font-size: 21px;
     font-weight: 200;
   }
-  .footer__container h3 i {
+  .footer h3 i {
     color: red;
   }
-  .footer__container p {
+  .footer p {
     font-family: Hind;
     font-size: 16px;
   }
-  .footer__container__social {
+  .footer__social {
     padding: 50px;
     display: flex;
     align-items: center;
     justify-items: center;
   }
 }
-.footer__container__address {
-  padding: 10px;
-}
-.footer__container__links {
+.footer__links {
   line-height: 0.8;
 }
-.footer__container__social {
-  padding: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.footer__container__social .circle {
-  width: 50px;
-  height: 50px;
+.footer__social__icons {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
+  background-color: black;
   color: white;
-  background-color: #000;
+  text-align: center;
+  line-height: 30px;
 }
-.footer__container__down {
+.footer__down {
   display: flex;
   align-self: center;
   justify-self: center;
 }
-.footer__container__down p {
+.footer__down p {
   font-size: 10px;
 }
 
