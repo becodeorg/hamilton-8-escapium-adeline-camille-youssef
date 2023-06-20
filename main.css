@@ -1,3 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+}
 
+.header {
+  background-image: url("./images/gallery/slide-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding: 17rem 1rem;
+  color: white;
+  font-family: Hind;
+}
+.header p {
+  line-height: 5rem;
+  padding-bottom: 20px;
+  font-size: 60px;
+  font-weight: 800;
+}
+.header .infos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 800;
+  gap: 1rem;
+  color: rgba(128, 128, 128, 0.726);
+}
+
+.categories {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #222222;
+  padding: 50px;
+  gap: 100px;
+}
+.categories .categories-left {
+  width: 700px;
+  font-family: Hind;
+  font-weight: 800;
+}
+.categories .categories-left img {
+  width: 700px;
+  height: 400px;
+  z-index: 0;
+}
+.categories .categories-left .container-under-img {
+  color: white;
+  background-color: #242424;
+  padding: 50px 30px 50px 25px;
+  box-shadow: -4px 4px 15px 5px #000000;
+  z-index: 1;
+  position: relative;
+  top: -40px;
+  left: 20px;
+}
+.categories .categories-left .container-under-img .containerwithimg {
+  text-align: center;
+}
+.categories .categories-left .container-under-img .containerwithimg img {
+  width: 90%;
+  padding: 40px 0;
+}
+.categories .categories-left .container-under-img p {
+  color: rgba(128, 128, 128, 0.726);
+  font-family: Hind;
+  font-weight: 500;
+  font-size: 17px;
+  width: 588px;
+  padding-left: 30px;
+}
+.categories .categories-left .container-under-img h3 {
+  font-size: 29px;
+  font-family: Hind;
+  font-weight: 700;
+  width: 588px;
+  padding-left: 30px;
+}
+.categories .categories-left .container-under-img .text-under-img {
+  text-align: center;
+  position: relative;
+  top: -30px;
+}
+.categories .categories-left .container-under-img .buttons-under-img {
+  padding-left: 25px;
+  padding-top: 20px;
+}
+.categories .categories-left .container-under-img .buttons-under-img button {
+  background-color: #242424;
+  border-radius: 20px;
+  border: 3px solid rgba(255, 255, 255, 0.171);
+  padding: 10px 20px;
+  color: white;
+  margin-right: 10px;
+}
+.categories .categories-right hr {
+  width: 30px;
+  position: relative;
+  right: 10px;
+  height: 3px;
+  border: none;
+  background-color: gray;
+  border-radius: 2px;
+}
+.categories .categories-right h3 {
+  padding-bottom: 20px;
+  color: white;
+  font-family: Hind;
+}
+.categories .categories-right .first-bloc p {
+  color: rgba(128, 128, 128, 0.651);
+  padding-top: 20px;
+}
+.categories .categories-right .second-bloc {
+  padding-top: 50px;
+}
+.categories .categories-right .second-bloc .pop-post-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 40px;
+}
+.categories .categories-right .second-bloc .pop-post-content hr {
+  margin: 0 20px 0 40px;
+}
+.categories .categories-right .second-bloc .pop-post-content p {
+  color: white;
+}
+.categories .categories-right .second-bloc .pop-post-content p:first-child {
+  color: rgba(128, 128, 128, 0.603);
+}
+.categories .categories-right .third-bloc {
+  width: 400px;
+  padding-top: 50px;
+}
+.categories .categories-right .third-bloc button {
+  margin-top: 10px;
+  background-color: #242424;
+  border-radius: 20px;
+  border: 3px solid rgba(255, 255, 255, 0.171);
+  padding: 10px 20px;
+  color: white;
+  margin-right: 10px;
+}
+.categories .categories-right .fourth-bloc {
+  padding-top: 50px;
+}
+.categories .categories-right .fourth-bloc .parent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 5px;
+  grid-row-gap: 30px;
+  padding-top: 40px;
+}
+.categories .categories-right .fourth-bloc .div1 {
+  grid-area: 1/1/2/2;
+}
+.categories .categories-right .fourth-bloc .div2 {
+  grid-area: 1/2/2/3;
+}
+.categories .categories-right .fourth-bloc .div3 {
+  grid-area: 1/3/2/4;
+}
+.categories .categories-right .fourth-bloc .div4 {
+  grid-area: 2/1/3/2;
+}
+.categories .categories-right .fourth-bloc .div5 {
+  grid-area: 2/2/3/3;
+}
+.categories .categories-right .fourth-bloc .div6 {
+  grid-area: 2/3/3/4;
+}
+.categories .categories-right .fourth-bloc img {
+  width: 100px;
+}
+.categories .categories-right .fifth-bloc {
+  color: gray;
+  margin-top: 50px;
+}
+.categories .categories-right .fifth-bloc hr {
+  margin-bottom: 20px;
+}
+.categories .categories-right .fifth-bloc p {
+  line-height: 40px;
+}
 
 /*# sourceMappingURL=main.css.map */

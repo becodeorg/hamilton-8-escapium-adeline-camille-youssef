@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap");
 
-$fontHeadings :  Montserrat;
-$FontParagraphs : Hind;
+$fontHeadings: Montserrat;
+$FontParagraphs: Hind;
 
 ///Big screen (width : 1920)
 $bs-H1: 120px;
 $bs-H2: 44px;
 $bs-H3: 32px;
 $bs-P: 16px;
-$bs-smaller-text:11px;
+$bs-smaller-text: 11px;
 
 ///Mobile (width : 412)
 $m-H1: 32px;
@@ -17,47 +17,14 @@ $m-H3: 21px;
 $m-P: 14px;
 $m-smaller-text: 10px;
 
-///colors 
+///colors
 
-$red: #F60B0E;
+$red: #f60b0e;
 
 ///Backgrounds
 
-$darkest-backgrounds: #1B1B1B;
+$darkest-backgrounds: #1b1b1b;
 $dark-background: #222222;
 $white-background: #fefefe;
 $global-font-color: #717171;
 $nav-font-color: #777;
-
-
-
-
-// Fonts
-// Headings: Montserrat.
-// Paragraphs: Hind.
-// Font-size
-// Big screens
-// H1: 120px
-// H2: 44px
-// H3: 32px
-// P: 16px
-// smaller text : 11px
-// Mobile
-// H1: 32px
-// H2: 19px
-// H3: 21px
-// P: 14px
-// smaller text : 10px
-
-// colors
-// Red: #F60B0E
-
-// Darkest background: #1B1B1B
-
-// Dark background: #222222
-
-// White background: #fefefe
-
-// Global font color: #717171
-
-// Nav font color: #777
