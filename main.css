@@ -4,13 +4,10 @@
   background-color: rgba(0, 0, 0, 0.5);
   /* color: variables.$global-font-color;*/
 }
-.footer span {
-  color: white;
-}
 @media (max-width: 412px) {
   .footer {
     display: grid;
-    grid-template-columns: repeat 2, 1fr;
+    grid-template-columns: 1fr;
     padding: 50px;
   }
   .footer h2 {
@@ -35,7 +32,7 @@
 @media (min-width: 413px) and (max-width: 767px) {
   .footer {
     display: grid;
-    grid-template-columns: repeat 4, 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     padding: 50px;
   }
   .footer h2 {
@@ -60,7 +57,7 @@
 @media (min-width: 768px) {
   .footer {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     padding: 200px 100px;
   }
   .footer h2 {
@@ -87,6 +84,9 @@
     align-items: center;
     justify-items: center;
   }
+}
+.footer__address .email {
+  color: white;
 }
 .footer__links {
   line-height: 0.8;
