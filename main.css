@@ -1,24 +1,118 @@
 @import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap");
-footer {
-  /* Mobile styles
-      @media (max-width: 412px)
-      @media (min-width: 413px) and (max-width:768)
-      @media (min-width: 769px)*/
-}
-footer .footer {
-  /*background-image: url('images/gallery/slide-3.jpg');*/
-}
-footer .footer__opacity {
+.footer__container {
+  /* background-image: url('images/gallery/slide-3.jpg');*/
   background-color: rgba(0, 0, 0, 0.5);
 }
-footer .footer__opacity h5 {
-  color: #717171;
-  font-family: Hind;
-  font-size: 19px;
-  font-weight: 200;
+.footer__container span {
+  color: white;
 }
-footer .footer__opacity h5 i {
-  color: red;
+@media (max-width: 412px) {
+  .footer__container {
+    display: grid;
+    grid-template-columns: repeat 2, 1fr;
+    padding: 50px;
+  }
+  .footer__container h2 {
+    font-family: Montserrat;
+    font-size: 19px;
+    color: white;
+  }
+  .footer__container h3 {
+    color: #717171;
+    font-family: Montserrat;
+    font-size: 21px;
+    font-weight: 200;
+  }
+  .footer__container h3 i {
+    color: red;
+  }
+  .footer__container p {
+    font-family: Hind;
+    font-size: 14px;
+  }
+}
+@media (min-width: 413px) and (max-width: 767px) {
+  .footer__container {
+    display: grid;
+    grid-template-columns: repeat 4, 1fr;
+    padding: 50px;
+  }
+  .footer__container h2 {
+    font-family: Montserrat;
+    font-size: 19px;
+    color: white;
+  }
+  .footer__container h3 {
+    color: #717171;
+    font-family: Montserrat;
+    font-size: 21px;
+    font-weight: 200;
+  }
+  .footer__container h3 i {
+    color: red;
+  }
+  .footer__container p {
+    font-family: Hind;
+    font-size: 14px;
+  }
+}
+@media (min-width: 768px) {
+  .footer__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 200px 100px;
+  }
+  .footer__container h2 {
+    font-family: Montserrat;
+    font-size: 19px;
+    color: white;
+  }
+  .footer__container h3 {
+    color: #717171;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 200;
+  }
+  .footer__container h3 i {
+    color: red;
+  }
+  .footer__container p {
+    font-family: Hind;
+    font-size: 16px;
+  }
+  .footer__container__social {
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+  }
+}
+.footer__container__address {
+  padding: 10px;
+}
+.footer__container__links {
+  line-height: 0.8;
+}
+.footer__container__social {
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer__container__social .circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: white;
+  background-color: #000;
+}
+.footer__container__down {
+  display: flex;
+  align-self: center;
+  justify-self: center;
+}
+.footer__container__down p {
+  font-size: 10px;
 }
 
 /*# sourceMappingURL=main.css.map */

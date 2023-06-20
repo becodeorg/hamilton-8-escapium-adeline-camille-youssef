@@ -1,32 +1,137 @@
 @use '../Abstracts/variables';
 
-footer {
+.footer__container {
+    /* background-image: url('images/gallery/slide-3.jpg');*/
+    background-color: rgba($color: black, $alpha: 0.5);
 
-    .footer {
+    span {
+        color: white;
+    }
 
-        /*background-image: url('images/gallery/slide-3.jpg');*/
-        &__opacity {
-            background-color: rgba($color: black, $alpha: 0.5);
+    @media (max-width: 412px) {
+        display: grid;
+        grid-template-columns: repeat (2, 1fr);
+        padding: 50px;
 
-            h5 {
-                color: variables.$global-font-color;
-                font-family: variables.$FontParagraphs;
-                font-size: 19px;
-                font-weight: 200;
+        h2 {
+            font-family: variables.$fontHeadings;
+            font-size: 19px;
+            color: white;
+        }
 
-                i {
-                    color: red;
-                }
+        h3 {
+            color: variables.$global-font-color;
+            font-family: variables.$fontHeadings;
+            font-size: 21px;
+            font-weight: 200;
 
+            i {
+                color: red;
             }
         }
 
+        p {
+            font-family: variables.$FontParagraphs;
+            font-size: 14px;
+        }
     }
 
+    @media (min-width: 413px) and (max-width:767px) {
+        display: grid;
+        grid-template-columns: repeat (4, 1fr);
+        padding: 50px;
 
-    /* Mobile styles
-        @media (max-width: 412px)
-        @media (min-width: 413px) and (max-width:768)
-        @media (min-width: 769px)*/
+        h2 {
+            font-family: variables.$fontHeadings;
+            font-size: 19px;
+            color: white;
+        }
+
+        h3 {
+            color: variables.$global-font-color;
+            font-family: variables.$fontHeadings;
+            font-size: 21px;
+            font-weight: 200;
+
+            i {
+                color: red;
+            }
+        }
+
+        p {
+            font-family: variables.$FontParagraphs;
+            font-size: 14px;
+        }
+    }
+
+    @media (min-width: 768px) {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        padding: 200px 100px;
+
+        h2 {
+            font-family: variables.$fontHeadings;
+            font-size: 19px;
+            color: white;
+        }
+
+        h3 {
+            color: variables.$global-font-color;
+            font-family: variables.$fontHeadings;
+            font-size: 20px;
+            font-weight: 200;
+
+            i {
+                color: red;
+            }
+        }
+
+        p {
+            font-family: variables.$FontParagraphs;
+            font-size: 16px;
+        }
+
+        &__social {
+            padding: 50px;
+            display: flex;
+            align-items: center;
+            justify-items: center;
+        }
+    }
+
+    &__address {
+        padding: 10px;
+    }
+
+    &__links {
+        line-height: 0.8;
+    }
+
+    &__hours {}
+
+    &__social {
+        padding: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .circle {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            color: white;
+            background-color: #000;
+        }
+    }
+
+    &__down {
+        display: flex;
+        align-self: center;
+        justify-self: center;
+
+        p {
+            font-size: 10px;
+        }
+    }
 
 }
