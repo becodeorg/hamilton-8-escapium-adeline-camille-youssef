@@ -1,11 +1,13 @@
 @use '../Abstracts/variables';
 
 .background-exit {
-    background-image: url('images/gallery/slide-3.jpg');
+    background-image: url('images/gallery/footer-bg.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 .footer {
-    background-color: rgba($color: black, $alpha: 0.8);
+    background-color: rgba($color: black, $alpha: 0.9);
     color: variables.$global-font-color;
 
     display: grid;
@@ -41,10 +43,27 @@
 
     &__links {}
 
+    &__hours {
+        .opening {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+        }
+
+        .day {
+            margin: 0px 0px 16px 0px;
+        }
+
+        .opening-hours {
+            margin: 0px 0px 16px 0px;
+        }
+    }
+
     &__social {
         .icons {
             padding-left: 30px;
             margin-top: 20px;
+
             i {
                 background-color: rgb(38, 38, 38);
                 width: 36px;

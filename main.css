@@ -1,10 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap");
 .background-exit {
-  background-image: url("images/gallery/slide-3.jpg");
+  background-image: url("images/gallery/footer-bg.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .footer {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.9);
   color: #717171;
   display: grid;
 }
@@ -29,6 +31,16 @@
 }
 .footer__address .email {
   color: white;
+}
+.footer__hours .opening {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.footer__hours .day {
+  margin: 0px 0px 16px 0px;
+}
+.footer__hours .opening-hours {
+  margin: 0px 0px 16px 0px;
 }
 .footer__social .icons {
   padding-left: 30px;
@@ -58,7 +70,7 @@
     padding: 50px;
   }
 }
-@media (min-width: 413px) and (max-width: 767px) {
+@media (min-width: 413px) and (max-width: 768px) {
   .footer {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     padding: 50px;
@@ -67,10 +79,10 @@
     grid-column: 1/5;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .footer {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    padding: 200px 100px;
+    padding: 100px 360px 50px 360px;
   }
   .footer p {
     font-size: 16px;
