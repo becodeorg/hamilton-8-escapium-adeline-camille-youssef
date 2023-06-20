@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"main.css"}
+{"version":3,"sourceRoot":"","sources":["Abstracts/_variables.scss","layout/_footer.scss"],"names":[],"mappings":"AAAQ;ACER;AAwBI;AAAA;AAAA;AAAA;;AAtBA;AAEI;;AACA;EACI;;AAEA;EACI,ODiBI;EChBJ,aDTE;ECUF;EACA;;AAEA;EACI","file":"main.css"}

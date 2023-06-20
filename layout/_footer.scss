@@ -1,0 +1,32 @@
+@use '../Abstracts/variables';
+
+footer {
+
+    .footer {
+
+        /*background-image: url('images/gallery/slide-3.jpg');*/
+        &__opacity {
+            background-color: rgba($color: black, $alpha: 0.5);
+
+            h5 {
+                color: variables.$global-font-color;
+                font-family: variables.$FontParagraphs;
+                font-size: 19px;
+                font-weight: 200;
+
+                i {
+                    color: red;
+                }
+
+            }
+        }
+
+    }
+
+
+    /* Mobile styles
+        @media (max-width: 412px)
+        @media (min-width: 413px) and (max-width:768)
+        @media (min-width: 769px)*/
+
+}

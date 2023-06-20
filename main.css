@@ -1,3 +1,24 @@
-
+@import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap");
+footer {
+  /* Mobile styles
+      @media (max-width: 412px)
+      @media (min-width: 413px) and (max-width:768)
+      @media (min-width: 769px)*/
+}
+footer .footer {
+  /*background-image: url('images/gallery/slide-3.jpg');*/
+}
+footer .footer__opacity {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+footer .footer__opacity h5 {
+  color: #717171;
+  font-family: Hind;
+  font-size: 19px;
+  font-weight: 200;
+}
+footer .footer__opacity h5 i {
+  color: red;
+}
 
 /*# sourceMappingURL=main.css.map */
