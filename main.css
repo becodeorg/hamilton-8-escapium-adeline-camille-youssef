@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap");
+@import url("./pages/page-blog/_blog-412px.scss");
+@import url("./pages/page-blog/_blog-768px.scss");
+@import url("./pages/page-blog/_blog-1920px.scss");
+@import url("/Abstracts/_variables.scss");
+@import url("/Abstracts/_mixin.scss");
 .background-exit {
   background-image: url("images/gallery/footer-bg.jpg");
   background-size: cover;
