@@ -1,99 +1,36 @@
 @use '../Abstracts/variables';
 
-.footer {
-    /* background-image: url('images/gallery/slide-3.jpg');*/
-    background-color: rgba($color: black, $alpha: 0.5);
+.background-exit {
+    background-image: url('images/gallery/slide-3.jpg');
+}
 
-    /* color: variables.$global-font-color;*/
+.footer {
+    background-color: rgba($color: black, $alpha: 0.8);
+    color: variables.$global-font-color;
 
     display: grid;
 
-    @media (max-width: 412px) {
-        grid-template-columns: 1fr;
-        padding: 50px;
+    h2 {
+        font-family: variables.$fontHeadings;
+        font-size: 19px;
+        color: white;
+        padding-left: 30px;
+    }
 
-        h2 {
-            font-family: variables.$fontHeadings;
-            font-size: 19px;
-            color: white;
-        }
+    h3 {
+        color: variables.$global-font-color;
+        font-family: variables.$fontHeadings;
+        font-size: 21px;
+        font-weight: 200;
 
-        h3 {
-            color: variables.$global-font-color;
-            font-family: variables.$fontHeadings;
-            font-size: 21px;
-            font-weight: 200;
-
-            i {
-                color: red;
-            }
-        }
-
-        p {
-            font-family: variables.$FontParagraphs;
-            font-size: 14px;
+        i {
+            color: red;
         }
     }
 
-    @media (min-width: 413px) and (max-width:767px) {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        padding: 50px;
-
-        h2 {
-            font-family: variables.$fontHeadings;
-            font-size: 19px;
-            color: white;
-        }
-
-        h3 {
-            color: variables.$global-font-color;
-            font-family: variables.$fontHeadings;
-            font-size: 21px;
-            font-weight: 200;
-
-            i {
-                color: red;
-            }
-        }
-
-        p {
-            font-family: variables.$FontParagraphs;
-            font-size: 14px;
-        }
-    }
-
-    @media (min-width: 768px) {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        padding: 200px 100px;
-
-        h2 {
-            font-family: variables.$fontHeadings;
-            font-size: 19px;
-            color: white;
-        }
-
-        h3 {
-            color: variables.$global-font-color;
-            font-family: variables.$fontHeadings;
-            font-size: 21px;
-            font-weight: 200;
-
-            i {
-                color: red;
-            }
-        }
-
-        p {
-            font-family: variables.$FontParagraphs;
-            font-size: 16px;
-        }
-
-        &__social {
-            padding: 50px;
-            display: flex;
-            align-items: center;
-            justify-items: center;
-        }
+    p {
+        font-family: variables.$FontParagraphs;
+        padding-left: 30px;
     }
 
     &__address {
@@ -102,33 +39,31 @@
         }
     }
 
-    &__links {
-        line-height: 0.8;
-    }
+    &__links {}
 
     &__social {
-        &__icons {
-            display: inline-block;
-            width: 30px;
-            height: 30px;
-            border-radius: 50%;
-            background-color: black;
-            color: white;
-            text-align: center;
-            line-height: 30px;
+        .icons {
+            padding-left: 30px;
+            margin-top: 20px;
+            i {
+                background-color: rgb(38, 38, 38);
+                width: 36px;
+                height: 36px;
+                border-radius: 50%;
+                color: white;
+                text-align: center;
+                line-height: 36px;
+                margin: 4px;
+            }
         }
     }
 
     &__down {
-        display: flex;
-        align-self: center;
-        justify-self: center;
+        text-align: center;
+        padding-top: 80px;
 
         p {
             font-size: 10px;
         }
     }
-
-
-
 }
