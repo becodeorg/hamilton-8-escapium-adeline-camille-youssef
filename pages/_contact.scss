@@ -1,0 +1,32 @@
+@use '../Abstracts/variables';
+
+.contact {
+    background-color: pink;
+
+    h2 {
+        //TODO: use variables for sizes and colors
+        font-family: variables.$fontHeadings;
+        font-size: 19px;
+        color: white;
+        padding-left: 30px;
+    }
+
+    &__get-in-touch {
+        background-color: aqua;
+    }
+
+    &__contact-form {
+        background-color: greenyellow;
+
+        form {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+
+        }
+
+    }
+
+    &__map {
+        background-color: yellow;
+    }
+}

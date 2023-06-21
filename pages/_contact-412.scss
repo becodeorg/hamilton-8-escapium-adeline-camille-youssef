@@ -1,0 +1,7 @@
+@media (max-width: 412px) {
+    .contact {
+        //TODO: move to base
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}

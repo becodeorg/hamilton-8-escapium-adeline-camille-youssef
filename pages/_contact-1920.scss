@@ -1,0 +1,20 @@
+@media (min-width: 769px) {
+    .contact {
+        //TODO: move to base
+        display: grid;
+        //TODO: try with 1fr 2fr
+        grid-template-columns: 1fr 1fr 1fr;
+
+        &__get-in-touch {
+            grid-column: 1 / 2;
+        }
+
+        &__contact-form {
+            grid-column: 2 / 4;
+        }
+
+        p {
+            font-size: 16px;
+        }
+    }
+}

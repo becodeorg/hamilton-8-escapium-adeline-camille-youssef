@@ -96,5 +96,64 @@
     grid-column: 1/5;
   }
 }
+.contact {
+  background-color: pink;
+}
+.contact h2 {
+  font-family: Montserrat;
+  font-size: 19px;
+  color: white;
+  padding-left: 30px;
+}
+.contact__get-in-touch {
+  background-color: aqua;
+}
+.contact__contact-form {
+  background-color: greenyellow;
+}
+.contact__contact-form form {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.contact__map {
+  background-color: yellow;
+}
+
+@media (max-width: 412px) {
+  .contact {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 413px) and (max-width: 768px) {
+  .contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .contact__get-in-touch {
+    grid-column: 1/2;
+  }
+  .contact__contact-form {
+    grid-column: 2/4;
+  }
+  .contact p {
+    font-size: 16px;
+  }
+}
+@media (min-width: 769px) {
+  .contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .contact__get-in-touch {
+    grid-column: 1/2;
+  }
+  .contact__contact-form {
+    grid-column: 2/4;
+  }
+  .contact p {
+    font-size: 16px;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */

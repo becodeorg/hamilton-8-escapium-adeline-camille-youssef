@@ -3,6 +3,11 @@
 @use "layout/footer-412";
 @use "layout/footer-768";
 @use "layout/footer-1920";
+@use "pages/contact";
+@use "pages/contact-412";
+@use "pages/contact-768";
+@use "pages/contact-1920";
+
 
 @import url('./pages/page-blog/_blog-412px.scss');
 @import url('./pages/page-blog/_blog-768px.scss');
