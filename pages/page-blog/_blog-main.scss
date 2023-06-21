@@ -1,5 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap");
+@import "./blog-1920px";
+@import "./blog-768px";
+@import "./blog-412px";
+
 * {
   margin: 0;
 }
@@ -135,7 +137,6 @@
   color: rgba(255, 255, 255, 0.664);
   padding-top: 2%;
 }
-
 .categories .categories-left .emmy-container .part1 .right-side {
   display: flex;
   flex-direction: row;
@@ -301,6 +302,4 @@
   line-height: 40px;
 }
 
-
-
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=main.scss.map */
