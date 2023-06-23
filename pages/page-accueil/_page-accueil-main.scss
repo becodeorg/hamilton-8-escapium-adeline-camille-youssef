@@ -1,6 +1,6 @@
-@import "./page-accueil-1920px";
-@import "./page-accueil-768px";
-@import "./page-accueil-412px";
+@use "./page-accueil-1920px";
+@use "./page-accueil-768px";
+@use "./page-accueil-412px";
 
 #header-gallery {
   background-image: url("/images/gallery/slide-4.jpg");
@@ -15,20 +15,22 @@
   align-items: center;
   .header-left {
     padding-left: 2%;
-    p {
-      font-size: 100px;
-      font-family: $FontParagraphs;
-      line-height: 12vh;
-      font-weight: 600;
-    }
-    a {
-      list-style-type: none;
-      text-decoration: none;
-      color: white;
-      font-weight: 500;
-      font-size: 30px;
-    }
+    position: relative;
   }
+  p {
+    font-size: 100px;
+    font-family: $FontParagraphs;
+    line-height: 12vh;
+    font-weight: 600;
+  }
+  a {
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 30px;
+  }
+
   .header-right {
     padding-right: 2%;
     display: flex;
@@ -56,5 +58,13 @@
         }
       }
     }
+  }
+}
+@keyframes example {
+  from {
+    transform: translateY(20vh);
+  }
+  to {
+    transform: translateY(0vh);
   }
 }
