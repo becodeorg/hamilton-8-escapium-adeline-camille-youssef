@@ -11,14 +11,14 @@
 }
 
 .footer {
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(34, 34, 34, 0.9);
   color: #717171;
   display: grid;
 }
 .footer h2 {
   font-family: Montserrat;
   font-size: 19px;
-  color: white;
+  color: #fefefe;
   padding-left: 30px;
 }
 .footer h3 {
@@ -28,7 +28,7 @@
   font-weight: 200;
 }
 .footer h3 i {
-  color: red;
+  color: #F60B0E;
 }
 .footer p {
   font-family: Hind;
@@ -56,10 +56,15 @@
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  color: white;
+  color: #fefefe;
   text-align: center;
   line-height: 36px;
   margin: 4px;
+}
+.footer__social .icons i:hover {
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  background-color: #F60B0E;
 }
 .footer__down {
   text-align: center;
@@ -102,7 +107,7 @@
 .contact h2 {
   font-family: Montserrat;
   font-size: 19px;
-  color: white;
+  color: #fefefe;
   padding-left: 30px;
 }
 .contact__get-in-touch {

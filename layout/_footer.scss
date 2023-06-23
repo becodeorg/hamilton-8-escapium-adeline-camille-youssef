@@ -7,16 +7,15 @@
 }
 
 .footer {
-    background-color: rgba($color: black, $alpha: 0.9);
+    background-color: rgba(variables.$dark-background, $alpha: 0.9);
     color: variables.$global-font-color;
 
     display: grid;
 
     h2 {
-        //TODO: use variables for sizes and colors
         font-family: variables.$fontHeadings;
         font-size: 19px;
-        color: white;
+        color: variables.$white-background;
         padding-left: 30px;
     }
 
@@ -27,8 +26,7 @@
         font-weight: 200;
 
         i {
-            //TODO: use variables for sizes and colors
-            color: red;
+            color: variables.$red;
         }
     }
 
@@ -67,21 +65,26 @@
             margin-top: 20px;
 
             i {
-                //TODO hover en rouge sur les icones
                 background-color: rgb(38, 38, 38);
                 width: 36px;
                 height: 36px;
                 border-radius: 50%;
-                color: white;
+                color: variables.$white-background;
                 text-align: center;
                 line-height: 36px;
                 margin: 4px;
+
+                &:hover {
+                    transition-duration: 0.5s;
+                    transition-timing-function: ease;
+                    background-color: variables.$red;
+                }
             }
+
         }
     }
 
     &__down {
-        //TODO l'image est un lien
         text-align: center;
         padding-top: 80px;
 
