@@ -302,5 +302,290 @@
 }
 
 
+* {
+  margin: 0;
+}
+
+.topnav {
+  background-color: rgba(14, 14, 14, 0.8352941176);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding-right: 1rem;
+  font-weight: 600;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.678);
+}
+
+.topnav .left-side {
+  display: flex;
+  flex-direction: row;
+}
+
+.topnav .left-side img {
+  height: 100%;
+}
+
+.topnav .left-side .link-navbar {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  list-style-type: none;
+  gap: 1rem;
+  padding-left: 15px;
+}
+
+.topnav .left-side .link-navbar a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.726);
+  padding: 5px;
+  opacity: 1;
+  transition: opacity 0.3s ease 0s;
+}
+
+.topnav .left-side .link-navbar a:hover {
+  background-image: linear-gradient(45deg, #a10000 40%, #353535 70%, #353535 100%);
+  border-radius: 5px;
+  opacity: 0.2;
+}
+
+.topnav .right-side {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+}
+.topnav .right-side button {
+  font-size: 17px;
+  border-radius: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.171);
+  color: white;
+  background-color: #353535;
+  padding: 0.5rem 1.5rem;
+  font-weight: 600;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 1100px) {
+  .topnav .link-navbar a {
+    display: none;
+  }
+  .topnav .right-side div {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+    position: relative;
+    right: 0;
+    top: 0;
+    font-size: 3rem;
+    color: black;
+    padding-top: 0.6rem;
+  }
+  .topnav-responsive {
+    display: block;
+    text-align: left;
+    background-color: #353535;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    position: absolute;
+    width: 100%;
+    height: 17rem;
+  }
+  .topnav-responsive .left-side a {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 10px 0 10px;
+    list-style-type: none;
+    font-weight: 600;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.678);
+    text-decoration: none;
+  }
+  .topnav-responsive .right-side {
+    margin-left: 0.5rem;
+    display: none;
+  }
+  .topnav-responsive a.icon {
+    float: right;
+    color: red;
+    position: relative;
+    top: -16rem;
+    right: 1rem;
+    font-size: 8rem;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .topnav-responsive {
+    background-color: rgba(14, 14, 14, 0.8352941176);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    padding-right: 1rem;
+    font-weight: 600;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.678);
+  }
+  .topnav-responsive .left-side {
+    display: flex;
+    flex-direction: row;
+  }
+  .topnav-responsive .left-side img {
+    height: 100%;
+  }
+  .topnav-responsive .left-side .link-navbar {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 1rem;
+    padding-left: 15px;
+  }
+  .topnav-responsive .left-side .link-navbar a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.726);
+    padding: 5px;
+    opacity: 1;
+    transition: opacity 0.3s ease 0s;
+  }
+  .topnav-responsive .left-side .link-navbar a:hover {
+    background-image: linear-gradient(45deg, #a10000 40%, #353535 70%, #353535 100%);
+    border-radius: 5px;
+    opacity: 0.2;
+  }
+  .topnav-responsive .right-side {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+  }
+  .topnav-responsive .right-side button {
+    font-size: 17px;
+    border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.171);
+    color: white;
+    background-color: #353535;
+    padding: 0.5rem 1.5rem;
+    font-weight: 600;
+  }
+  .topnav-responsive .icon {
+    display: none;
+  }
+}
+@media screen and (max-width: 412px) {
+  #header-gallery {
+    background-image: url("/images/gallery/slide-4.jpg");
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50% 0 !important;
+    align-items: center;
+  }
+  #header-gallery .header-left {
+    padding-left: 2%;
+  }
+  #header-gallery .header-left p {
+    font-size: 100px;
+    font-family: Hind;
+    line-height: 12vh;
+    font-weight: 600;
+  }
+  #header-gallery .header-left a {
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 30px;
+  }
+  #header-gallery .header-right {
+    padding-right: 2%;
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+  }
+  #header-gallery .header-right div {
+    text-align: right;
+    height: 5%;
+  }
+  #header-gallery .header-right div button {
+    border: none;
+    border-radius: 20px;
+  }
+  #header-gallery .header-right .b button {
+    padding: 3px 30px;
+  }
+  #header-gallery .header-right .a button,
+  #header-gallery .header-right .c button {
+    padding: 3px 15px;
+  }
+  #header-gallery .header-right .a button:hover,
+  #header-gallery .header-right .c button:hover {
+    padding: 3px 30px;
+  }
+}
+#header-gallery {
+  background-image: url("/images/gallery/slide-4.jpg");
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 15% 0;
+  align-items: center;
+}
+#header-gallery .header-left {
+  padding-left: 2%;
+}
+#header-gallery .header-left p {
+  font-size: 100px;
+  font-family: Hind;
+  line-height: 12vh;
+  font-weight: 600;
+}
+#header-gallery .header-left a {
+  list-style-type: none;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 30px;
+}
+#header-gallery .header-right {
+  padding-right: 2%;
+  display: flex;
+  flex-direction: column;
+  gap: 2%;
+}
+#header-gallery .header-right div {
+  text-align: right;
+  height: 5%;
+}
+#header-gallery .header-right div button {
+  border: none;
+  border-radius: 20px;
+}
+#header-gallery .header-right .b button {
+  padding: 3px 30px;
+}
+#header-gallery .header-right .a button,
+#header-gallery .header-right .c button {
+  padding: 3px 15px;
+}
+#header-gallery .header-right .a button:hover,
+#header-gallery .header-right .c button:hover {
+  padding: 3px 30px;
+}
 
 /*# sourceMappingURL=main.css.map */
