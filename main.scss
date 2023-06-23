@@ -1,4 +1,5 @@
 // @use rules must be written before any other rules.
+@use "layout/body";
 @use "layout/footer";
 @use "layout/footer-412";
 @use "layout/footer-768";
@@ -9,8 +10,12 @@
 @use "pages/contact-1920";
 
 
-@import url('./pages/page-blog/_blog-412px.scss');
-@import url('./pages/page-blog/_blog-768px.scss');
-@import url('./pages/page-blog/_blog-1920px.scss');
-@import url('/Abstracts/_variables.scss');
-@import url('/Abstracts/_mixin.scss');
+@import "./pages/page-blog/_blog-412px.scss";
+@import "./pages/page-blog/_blog-768px.scss";
+@import "./pages/page-blog/_blog-1920px.scss";
+
+@import "./Abstracts/mixin";
+@import "./Abstracts/variables";
+@import "./pages/page-blog/blog-main";
+@import "./pages/page-accueil/page-accueil-main";
+@import "./layout/navbar";
