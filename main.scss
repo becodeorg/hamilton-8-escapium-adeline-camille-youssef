@@ -2,5 +2,10 @@
 @import "./Abstracts/variables";
 @import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap");
 @import "./pages/page-blog/blog-main";
-@import "./pages/navbar/navbar-style.scss";
+@import "./layout/navbar.scss";
 @import "./pages/page-accueil/page-accueil-main";
+@import "./layout/footer.scss";
+@import "./layout/footer";
+@import "./layout/footer-412";
+@import "./layout/footer-768";
+@import "./layout/footer-1920";

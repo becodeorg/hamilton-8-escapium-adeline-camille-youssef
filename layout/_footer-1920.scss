@@ -1,0 +1,14 @@
+@media (min-width: 769px) {
+    .footer {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding: 100px 360px 50px 360px;
+
+        p {
+            font-size: 16px;
+        }
+
+        &__down {
+            grid-column: 1 / 5;
+        }
+    }
+}
