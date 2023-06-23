@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 @import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap");
@@ -591,5 +592,105 @@
   padding: 3px 30px;
 }
 >>>>>>> youssef
+=======
+@import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap");
+@import url("./pages/page-blog/_blog-412px.scss");
+@import url("./pages/page-blog/_blog-768px.scss");
+@import url("./pages/page-blog/_blog-1920px.scss");
+@import url("/Abstracts/_variables.scss");
+@import url("/Abstracts/_mixin.scss");
+.background-exit {
+  background-image: url("images/gallery/footer-bg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.footer {
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #717171;
+  display: grid;
+}
+.footer h2 {
+  font-family: Montserrat;
+  font-size: 19px;
+  color: white;
+  padding-left: 30px;
+}
+.footer h3 {
+  color: #717171;
+  font-family: Montserrat;
+  font-size: 21px;
+  font-weight: 200;
+}
+.footer h3 i {
+  color: red;
+}
+.footer p {
+  font-family: Hind;
+  padding-left: 30px;
+}
+.footer__address .email {
+  color: white;
+}
+.footer__hours .opening {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.footer__hours .day {
+  margin: 0px 0px 16px 0px;
+}
+.footer__hours .opening-hours {
+  margin: 0px 0px 16px 0px;
+}
+.footer__social .icons {
+  padding-left: 30px;
+  margin-top: 20px;
+}
+.footer__social .icons i {
+  background-color: rgb(38, 38, 38);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+  line-height: 36px;
+  margin: 4px;
+}
+.footer__down {
+  text-align: center;
+  padding-top: 80px;
+}
+.footer__down p {
+  font-size: 10px;
+}
+
+@media (max-width: 412px) {
+  .footer {
+    grid-template-columns: 1fr;
+    padding: 50px;
+  }
+}
+@media (min-width: 413px) and (max-width: 768px) {
+  .footer {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 50px;
+  }
+  .footer__down {
+    grid-column: 1/5;
+  }
+}
+@media (min-width: 769px) {
+  .footer {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 100px 360px 50px 360px;
+  }
+  .footer p {
+    font-size: 16px;
+  }
+  .footer__down {
+    grid-column: 1/5;
+  }
+}
+>>>>>>> 2e13dd87c234eeff54e36f5d7f3cd27d034809ec
 
 /*# sourceMappingURL=main.css.map */
