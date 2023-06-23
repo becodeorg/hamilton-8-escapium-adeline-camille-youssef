@@ -1,7 +1,7 @@
 @media (min-width: 413px) and (max-width:768px) {
     .footer {
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        padding: 50px;
+        padding: 7% 10% 2% 15%;
 
         &__down {
             grid-column: 1 / 5;
