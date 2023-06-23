@@ -14,14 +14,14 @@
   display: grid;
 }
 .footer h2 {
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-size: 19px;
   color: white;
   padding-left: 30px;
 }
 .footer h3 {
   color: #717171;
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-size: 21px;
   font-weight: 200;
 }
@@ -29,7 +29,7 @@
   color: red;
 }
 .footer p {
-  font-family: Hind;
+  font-family: "Hind Siliguri", sans-serif;
   padding-left: 30px;
 }
 .footer__address .email {
@@ -414,7 +414,7 @@
   }
   #header-gallery .header-left p {
     font-size: 100px;
-    font-family: Hind;
+    font-family: "Hind Siliguri", sans-serif;
     line-height: 12vh;
     font-weight: 600;
   }
@@ -468,7 +468,7 @@
 }
 #header-gallery .header-left p {
   font-size: 100px;
-  font-family: Hind;
+  font-family: "Hind Siliguri", sans-serif;
   line-height: 12vh;
   font-weight: 600;
 }
@@ -680,5 +680,156 @@
   }
   .topnav-responsive .icon {
     display: none;
+  }
+}
+.rooms {
+  margin: 0%;
+  background-color: #333;
+}
+.rooms a {
+  text-decoration: none;
+}
+.rooms ul {
+  list-style: none;
+}
+.rooms .button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rooms button {
+  background-color: transparent;
+  border: 1px solid #717171;
+  color: #fefefe;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 25px;
+  cursor: pointer;
+  margin: 2vw;
+}
+.rooms button:hover {
+  border: 1px solid #f60b0e;
+  background-color: #f60b0e;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.rooms__header {
+  background-image: url(../images/gallery/slide-1.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: 50vh;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.rooms__header h1 {
+  font-size: 120px;
+  color: #fefefe;
+  padding-top: 5%;
+}
+.rooms__header h1 span {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #f60b0e;
+  font-size: 145px;
+  margin-left: -47px;
+}
+.rooms__header ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 27px;
+  padding: 0%;
+}
+.rooms__header ul li {
+  color: #fefefe;
+}
+.rooms__header hr {
+  width: 15px;
+  height: 3px;
+  background-color: #717171;
+  border: none;
+  margin: 10px;
+}
+
+.card {
+  margin: 0%;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+ul {
+  display: flex;
+  padding: 0%;
+}
+ul li {
+  margin: 2px;
+}
+
+img {
+  height: 100px;
+  width: 100%;
+}
+
+.card h2 {
+  color: #333;
+  font-size: 20px;
+}
+
+.card p {
+  color: #666;
+  font-size: 14px;
+}
+
+@media (max-width: 769px) {
+  .rooms__header h1 {
+    font-size: 32px;
+  }
+  .rooms__header h1 span {
+    font-size: 32px;
+    margin: 0;
+  }
+  .rooms__header ul {
+    font-size: 12px;
+  }
+}
+@media (max-width: 769px) {
+  .rooms__header h1 {
+    margin-bottom: 10%;
+  }
+  .rooms__header ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .button-container {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  button {
+    width: 60%;
+  }
+}
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  margin-top: 20px; /* Adjust the margin as per your preference */
+}
+@media screen and (max-width: 1200px) {
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 768px) {
+  .card-container {
+    grid-template-columns: 1fr;
+    margin-top: 10px; /* Adjust the margin as per your preference */
   }
 }/*# sourceMappingURL=main.css.map */
