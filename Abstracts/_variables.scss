@@ -3,11 +3,19 @@
 $fontHeadings: Montserrat;
 $FontParagraphs: Hind;
 
+@import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap");
+
+$fontHeadings: Montserrat;
+$FontParagraphs: Hind;
+
 ///Big screen (width : 1920)
 $bs-H1: 120px;
 $bs-H2: 44px;
 $bs-H3: 32px;
 $bs-P: 16px;
+
+$bs-smaller-text: 11px;
+
 $bs-smaller-text: 11px;
 
 ///Mobile (width : 412)
@@ -16,6 +24,14 @@ $m-H2: 19px;
 $m-H3: 21px;
 $m-P: 14px;
 $m-smaller-text: 10px;
+
+///colors
+
+$red: #f60b0e;
+
+///Backgrounds
+
+$darkest-backgrounds: #1b1b1b;
 
 ///colors
 
