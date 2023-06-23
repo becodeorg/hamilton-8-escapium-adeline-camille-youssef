@@ -1,44 +1,32 @@
-@import 'pages/navbar/navbar-style.scss';
+//For everyone
+@import url('/Abstracts/_mixin.scss');
+@import url('/Abstracts/_variables.scss');
 
-/*Home page*/
-@import './pages/page-accueil-1920px';
-@import './pages/page-accueil-768px';
+//Navbar
+@import "./pages/navbar/navbar-style.scss";
+
+//Footer
 // @use rules must be written before any other rules.
 @use "./layout/footer";
 @use "./layout/footer-412";
 @use "./layout/footer-768";
 @use "./layout/footer-1920";
 
-@import url('./pages/page-blog/_blog-412px.scss');
-@import url('./pages/page-blog/_blog-768px.scss');
-@import url('./pages/page-blog/_blog-1920px.scss');
-@import url('/Abstracts/_variables.scss');
-@import url('/Abstracts/_mixin.scss');
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-// @use rules must be written before any other rules.
-@use "layout/footer";
-@use "layout/footer-412";
-@use "layout/footer-768";
-@use "layout/footer-1920";
-
->>>>>>> 2e13dd87c234eeff54e36f5d7f3cd27d034809ec
-@import url('./pages/page-blog/_blog-412px.scss');
-@import url('./pages/page-blog/_blog-768px.scss');
-@import url('./pages/page-blog/_blog-1920px.scss');
-@import url('/Abstracts/_variables.scss');
-<<<<<<< HEAD
-@import url('/Abstracts/_mixin.scss');
-
-=======
-@import "./Abstracts/mixin";
-@import "./Abstracts/variables";
-@import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap");
-@import "./pages/page-blog/blog-main";
-@import "./pages/navbar/navbar-style.scss";
+//Home page*
+@import './pages/page-accueil-1920px';
+@import './pages/page-accueil-768px';
 @import "./pages/page-accueil/page-accueil-main";
->>>>>>> youssef
-=======
-@import url('/Abstracts/_mixin.scss');
->>>>>>> 2e13dd87c234eeff54e36f5d7f3cd27d034809ec
+
+//Blog page
+@import url('./pages/page-blog/_blog-412px.scss');
+@import url('./pages/page-blog/_blog-768px.scss');
+@import url('./pages/page-blog/_blog-1920px.scss');
+@import "./pages/page-blog/blog-main";
+
+
+
+
+
+
+
+
