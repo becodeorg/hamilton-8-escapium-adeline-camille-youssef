@@ -1,32 +1,15 @@
-//For everyone
-@import url('/Abstracts/_mixin.scss');
-@import url('/Abstracts/_variables.scss');
-
-//Navbar
-@import "./pages/navbar/navbar-style.scss";
-
-//Footer
 // @use rules must be written before any other rules.
-@use "./layout/footer";
-@use "./layout/footer-412";
-@use "./layout/footer-768";
-@use "./layout/footer-1920";
+@import "layout/footer";
+@import "layout/footer-412";
+@import "layout/footer-768";
+@import "layout/footer-1920";
 
-//Home page*
-@import './pages/page-accueil-1920px';
-@import './pages/page-accueil-768px';
-@import "./pages/page-accueil/page-accueil-main";
+@import "./pages/page-blog/_blog-412px.scss";
+@import "./pages/page-blog/_blog-768px.scss";
+@import "./pages/page-blog/_blog-1920px.scss";
 
-//Blog page
-@import url('./pages/page-blog/_blog-412px.scss');
-@import url('./pages/page-blog/_blog-768px.scss');
-@import url('./pages/page-blog/_blog-1920px.scss');
+@import "./Abstracts/mixin";
+@import "./Abstracts/variables";
 @import "./pages/page-blog/blog-main";
-
-
-
-
-
-
-
-
+@import "./pages/page-accueil/page-accueil-main";
+@import "./layout/navbar";

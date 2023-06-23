@@ -1,90 +1,87 @@
-@use '../Abstracts/variables';
+@use "../Abstracts/variables";
 
 .background-exit {
-    background-image: url('images/gallery/footer-bg.jpg');
-    background-size: cover;
-    background-position: center;
+  background-image: url("images/gallery/footer-bg.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .footer {
-    background-color: rgba($color: black, $alpha: 0.9);
+  background-color: rgba($color: black, $alpha: 0.9);
+  color: variables.$global-font-color;
+
+  display: grid;
+
+  h2 {
+    font-family: variables.$fontHeadings;
+    font-size: 19px;
+    color: white;
+    padding-left: 30px;
+  }
+
+  h3 {
     color: variables.$global-font-color;
+    font-family: variables.$fontHeadings;
+    font-size: 21px;
+    font-weight: 200;
 
-    display: grid;
+    i {
+      color: red;
+    }
+  }
 
-    h2 {
-        font-family: variables.$fontHeadings;
-        font-size: 19px;
+  p {
+    font-family: variables.$FontParagraphs;
+    padding-left: 30px;
+  }
+
+  &__address {
+    .email {
+      color: white;
+    }
+  }
+
+  &__hours {
+    .opening {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .day {
+      margin: 0px 0px 16px 0px;
+    }
+
+    .opening-hours {
+      margin: 0px 0px 16px 0px;
+    }
+  }
+
+  &__social {
+    .icons {
+      padding-left: 30px;
+      margin-top: 20px;
+
+      i {
+        //TODO hover en rouge sur les icones
+        background-color: rgb(38, 38, 38);
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
         color: white;
-        padding-left: 30px;
+        text-align: center;
+        line-height: 36px;
+        margin: 4px;
+      }
     }
+  }
 
-    h3 {
-        color: variables.$global-font-color;
-        font-family: variables.$fontHeadings;
-        font-size: 21px;
-        font-weight: 200;
-
-        i {
-            color: red;
-        }
-    }
+  &__down {
+    //TODO l'image est un lien
+    text-align: center;
+    padding-top: 80px;
 
     p {
-        font-family: variables.$FontParagraphs;
-        padding-left: 30px;
+      font-size: 10px;
     }
-
-    &__address {
-        .email {
-            color: white;
-        }
-    }
-
-    &__links {}
-
-    &__hours {
-        .opening {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-
-        }
-
-        .day {
-            margin: 0px 0px 16px 0px;
-        }
-
-        .opening-hours {
-            margin: 0px 0px 16px 0px;
-        }
-    }
-
-    &__social {
-        .icons {
-            padding-left: 30px;
-            margin-top: 20px;
-
-            i {
-                //TODO hover en rouge sur les icones
-                background-color: rgb(38, 38, 38);
-                width: 36px;
-                height: 36px;
-                border-radius: 50%;
-                color: white;
-                text-align: center;
-                line-height: 36px;
-                margin: 4px;
-            }
-        }
-    }
-
-    &__down {
-        //TODO l'image est un lien
-        text-align: center;
-        padding-top: 80px;
-
-        p {
-            font-size: 10px;
-        }
-    }
+  }
 }
