@@ -2,15 +2,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap");
 .main-homepage {
-  font-family: "Hind Siliguri", sans-serif;
-  margin: 0%;
-  padding: 0%;
-  background-color: #1B1B1B;
-  color: aliceblue;
+  /* ... autres styles ... */
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-color: #1B1B1B;
+  color: #717171;
+  font-family: "Hind Siliguri", sans-serif;
+}
+.main-homepage hr {
+  max-width: 35px;
+  background-color: #323232;
+  border: none;
+  height: 5px;
+}
+.main-homepage h2, .main-homepage h3 {
+  color: white;
+}
+.main-homepage h2 {
+  font-size: 44px;
+  text-align: center;
+}
+.main-homepage h3 {
+  font-size: 32px;
 }
 .main-homepage ul, .main-homepage ol {
   list-style: none;
@@ -21,9 +36,9 @@
 .main-homepage .featuredRooms {
   padding-top: 27px;
 }
-.main-homepage .featuredRooms hr {
-  max-width: 3%;
-  height: 5px;
+.main-homepage .featuredRooms h3:hover {
+  color: #F60B0E;
+  cursor: default;
 }
 .main-homepage .featuredRooms .room {
   display: flex;
@@ -45,12 +60,6 @@
 .main-homepage .featuredRooms .room__card .card__padlock--red {
   color: #F60B0E;
 }
-.main-homepage .featuredRooms .room__card h2 {
-  font-size: 44px;
-}
-.main-homepage .featuredRooms .room__card h2:hover {
-  color: #F60B0E;
-}
 .main-homepage .featuredRooms .room__card ul {
   display: flex;
 }
@@ -59,8 +68,10 @@
 }
 
 @media (max-width: 768px) {
+  .featuredRooms {
+    margin: 0%;
+  }
   .featuredRooms .room {
     flex-wrap: wrap;
-    background-color: aliceblue;
   }
 }/*# sourceMappingURL=main.css.map */
