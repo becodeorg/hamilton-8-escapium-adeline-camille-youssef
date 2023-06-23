@@ -1,7 +1,45 @@
 @media (max-width: 412px) {
     .contact {
-        //TODO: move to base
-        display: grid;
         grid-template-columns: 1fr;
+
+        &__get-in-touch {
+            grid-column: 1 / 2;
+
+            .info {
+                .email {}
+
+                i {}
+
+                p {}
+            }
+        }
+
+        &__contact-form {
+            grid-column: 2 / 4;
+
+            .name {
+                #name {
+                    &:hover {}
+
+                    &::placeholder {}
+
+                }
+            }
+
+            .mail {
+                #email {
+                    &::placeholder {}
+                }
+            }
+
+            .message {
+                #message {
+                    &::placeholder {}
+                }
+            }
+        }
+
+        .submit-button {}
+
     }
 }

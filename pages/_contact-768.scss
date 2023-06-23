@@ -1,20 +1,47 @@
 @media (min-width: 413px) and (max-width:768px) {
     .contact {
-        //TODO: move to base
-        display: grid;
-        //TODO: try with 1fr 2fr
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 2fr;
 
         &__get-in-touch {
             grid-column: 1 / 2;
+
+            .info {
+                .email {}
+
+                i {}
+
+                p {}
+            }
         }
 
         &__contact-form {
             grid-column: 2 / 4;
+
+            .name {
+                #name {
+                    &:hover {}
+
+                    &::placeholder {}
+
+                }
+            }
+
+            .mail {
+                #email {
+                    &::placeholder {}
+                }
+            }
+
+            .message {
+                #message {
+                    &::placeholder {}
+                }
+            }
         }
 
-        p {
-            font-size: 16px;
-        }
+        .submit-button {}
+
     }
+
+
 }

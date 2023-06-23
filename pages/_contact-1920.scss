@@ -1,20 +1,51 @@
+@use '../Abstracts/variables';
+
 @media (min-width: 769px) {
     .contact {
-        //TODO: move to base
-        display: grid;
-        //TODO: try with 1fr 2fr
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 2fr;
 
         &__get-in-touch {
             grid-column: 1 / 2;
+
+            .info {
+                .email {}
+
+                i {}
+
+                p {}
+            }
         }
 
         &__contact-form {
             grid-column: 2 / 4;
+
+            .name {
+                #name {
+                    &:hover {
+                        border-color: variables.$white-background;
+                    }
+
+                    &::placeholder {}
+
+                }
+
+                .mail {
+                    #email {
+                        &::placeholder {}
+                    }
+                }
+
+                .message {
+                    #message {
+                        &::placeholder {}
+                    }
+                }
+            }
+
+            .submit-button {}
+
         }
 
-        p {
-            font-size: 16px;
-        }
+
     }
 }

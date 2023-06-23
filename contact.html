@@ -17,25 +17,35 @@
         <div class="contact">
             <section class="contact__get-in-touch">
                 <h2>Get in Touch</h2>
-                <p>If you are interested in working with us, please get in touch</p>
-                <i class="fa-regular fa-map"></i>
-                <p>2390 RoadHill St., Suite 100<br>
-                    North Downtown, NY 82153</p>
-                <i class="fa-solid fa-phone"></i>
-                <p>+1800 900 1248</p>
-                <i class="fa-regular fa-envelope"></i>
-                <p><span class="email">info@escapium.com</span></p>
+                <p>If you are interested in working with<br>
+                    us, please get in touch</p>
+                <div class="info">
+                    <i class="fa-regular fa-map"></i>
+                    <p>2390 RoadHill St., Suite 100<br>
+                        North Downtown, NY 82153</p>
+                    <i class="fa-solid fa-phone"></i>
+                    <p>+1800 900 1248</p>
+                    <i class="fa-regular fa-envelope"></i>
+                    <p><span class="email">info@escapium.com</span></p>
+                </div>
             </section>
             <section class="contact__contact-form">
                 <h2>Contact Form</h2>
                 <form>
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required>
-                    <label for="email">Email Address</label>
-                    <input type="email" id="email" name="email" required>
-                    <label for="message">Your Message...</label>
-                    <textarea id="message" name="message" required></textarea>
-                    <input type="submit" value="Send Message">
+                    <div class="form">
+                        <div class="name">
+                            <input placeholder="Name" type="text" id="name" name="name" required>
+                        </div>
+                        <div class="mail">
+                            <input placeholder="Email Address" type="email" id="email" name="email" required>
+                        </div>
+                        <div class="message">
+                            <textarea placeholder="Your Message..." id="message" name="message" required></textarea>
+                        </div>
+
+                        <input class="submit-button" type="submit" value="Send Message">
+
+                    </div>
                 </form>
             </section>
         </div>

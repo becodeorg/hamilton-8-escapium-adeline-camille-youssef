@@ -1,32 +1,145 @@
 @use '../Abstracts/variables';
 
 .contact {
-    background-color: pink;
+    background-color: variables.$dark-background;
+    display: grid;
+    font-family: variables.$FontParagraphs;
+    color: variables.$global-font-color;
+    font-size: variables.$bs-P;
+    padding: 5% 15%;
+
 
     h2 {
-        //TODO: use variables for sizes and colors
         font-family: variables.$fontHeadings;
-        font-size: 19px;
+        font-size: variables.$bs-H2;
         color: variables.$white-background;
-        padding-left: 30px;
     }
 
+    p {
+        font-weight: 400;
+    }
+
+    i {}
+
     &__get-in-touch {
-        background-color: aqua;
+
+        .info {
+            display: grid;
+            grid-template-columns: 1fr 4fr;
+
+            .email {
+                color: variables.$white-background
+            }
+
+            i {
+                color: variables.$white-background;
+                font-size: 30px;
+                text-align: center;
+                padding: 30px;
+            }
+
+            p {
+                padding: 10px;
+            }
+
+        }
     }
 
     &__contact-form {
-        background-color: greenyellow;
 
-        form {
+        .form {
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
 
+            .name {
+                width: 100%;
+
+                #name {
+                    background-color: variables.$dark-background;
+                    border: none;
+                    font-family: variables.$FontParagraphs;
+                    font-weight: 400;
+                    font-size: 20px;
+                    width: 100%;
+                    height: 30px;
+                    border-bottom: solid 3px variables.$global-font-color;
+
+                    &:hover {
+                        border-color: variables.$white-background;
+                    }
+
+                    &::placeholder {
+                        grid-column: 1 / 2;
+                    }
+                }
+            }
+
+            .mail {
+                width: 100%;
+
+                #email {
+                    background-color: variables.$dark-background;
+                    font-family: variables.$FontParagraphs;
+                    border: none;
+                    font-weight: 400;
+                    font-size: 20px;
+                    width: 100%;
+                    height: 30px;
+                    border-bottom: solid 3px variables.$global-font-color;
+
+                    &:hover {
+                        border-color: variables.$white-background;
+                    }
+
+                    &::placeholder {
+                        grid-column: 2 / 3;
+                    }
+                }
+            }
+
+            .message {
+                width: 100%;
+                grid-column: 1 / -1;
+
+                #message {
+                    background-color: variables.$dark-background;
+                    font-family: variables.$FontParagraphs;
+                    border: none;
+                    font-weight: 400;
+                    font-size: 20px;
+                    width: 100%;
+                    height: 170px;
+                    border-bottom: solid 3px variables.$global-font-color;
+                    margin: 10px 0px;
+
+                    &:hover {
+                        border-color: variables.$white-background;
+                    }
+
+                    &::placeholder {
+                        background-color: variables.$dark-background;
+                    }
+                }
+            }
+
+            .submit-button {
+
+                grid-column: 1 / -1;
+                background-color: variables.$red;
+                color: variables.$white-background;
+                font-weight: 600;
+                font-size: 18px;
+                border-radius: 50px;
+                border-style: none;
+                height: 60px;
+                width: 100%;
+
+            }
         }
-
     }
 
-    &__map {
-        background-color: yellow;
-    }
+}
+
+.map {
+    background-color: yellow;
 }
