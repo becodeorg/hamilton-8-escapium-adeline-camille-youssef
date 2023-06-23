@@ -1,22 +1,24 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap');
 
 $fontHeadings :  Montserrat;
-$FontParagraphs : 'Hind Siliguri', sans-serif;
+$FontParagraphs : Hind;
 
 ///Big screen (width : 1920)
-$bs-H1: 120px;
-$bs-H2: 44px;
-$bs-H3: 32px;
-$bs-P: 16px;
-$bs-smaller-text:11px;
+$bs-H1: 6.250vw;
+$bs-H2: 2.292vw;
+$bs-H3: 1.667vw;
+$bs-P: 0.833vw;
+$bs-smaller-text:0.573vw;
 
 ///Mobile (width : 412)
-$m-H1: 32px;
-$m-H2: 19px;
-$m-H3: 21px;
-$m-P: 14px;
-$m-smaller-text: 10px;
+$m-H1: 7.767vw;
+$m-H2: 4.612vw;
+$m-H3: 5.097vw;
+$m-P: 3.398vw;
+$m-smaller-text: 2.427vw;
 
+<<<<<<< HEAD
 ///colors 
 
 $red: #F60B0E;
@@ -24,6 +26,15 @@ $red: #F60B0E;
 ///Backgrounds
 
 $darkest-backgrounds: #1B1B1B;
+=======
+///colors
+
+$red: #f60b0e;
+
+///Backgrounds
+
+$darkest-backgrounds: #1b1b1b;
+>>>>>>> youssef
 $dark-background: #222222;
 $white-background: #fefefe;
 $global-font-color: #717171;
@@ -62,3 +73,5 @@ $tiltes : white;
 // Global font color: #717171
 
 // Nav font color: #777
+=======
+>>>>>>> youssef
