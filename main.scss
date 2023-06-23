@@ -1,8 +1,8 @@
 // @use rules must be written before any other rules.
-@import "layout/footer";
-@import "layout/footer-412";
-@import "layout/footer-768";
-@import "layout/footer-1920";
+@use "layout/footer";
+@use "layout/footer-412";
+@use "layout/footer-768";
+@use "layout/footer-1920";
 
 @import "./pages/page-blog/_blog-412px.scss";
 @import "./pages/page-blog/_blog-768px.scss";
