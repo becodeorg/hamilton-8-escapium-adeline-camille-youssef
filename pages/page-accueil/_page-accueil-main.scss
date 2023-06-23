@@ -1,0 +1,60 @@
+@import "./page-accueil-1920px";
+@import "./page-accueil-768px";
+@import "./page-accueil-412px";
+
+#header-gallery {
+  background-image: url("/images/gallery/slide-4.jpg");
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 15% 0;
+  align-items: center;
+  .header-left {
+    padding-left: 2%;
+    p {
+      font-size: 100px;
+      font-family: $FontParagraphs;
+      line-height: 12vh;
+      font-weight: 600;
+    }
+    a {
+      list-style-type: none;
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      font-size: 30px;
+    }
+  }
+  .header-right {
+    padding-right: 2%;
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+    div {
+      text-align: right;
+      height: 5%;
+      button {
+        border: none;
+        border-radius: 20px;
+      }
+    }
+    .b {
+      button {
+        padding: 3px 30px;
+      }
+    }
+    .a,
+    .c {
+      button {
+        padding: 3px 15px;
+        &:hover {
+          padding: 3px 30px;
+        }
+      }
+    }
+  }
+}

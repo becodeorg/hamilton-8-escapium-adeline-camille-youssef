@@ -1,14 +1,25 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap');
 
 $fontHeadings :  Montserrat;
 $FontParagraphs : Hind;
+=======
+@import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap");
+
+$fontHeadings: Montserrat;
+$FontParagraphs: Hind;
+>>>>>>> youssef
 
 ///Big screen (width : 1920)
 $bs-H1: 120px;
 $bs-H2: 44px;
 $bs-H3: 32px;
 $bs-P: 16px;
+<<<<<<< HEAD
 $bs-smaller-text:11px;
+=======
+$bs-smaller-text: 11px;
+>>>>>>> youssef
 
 ///Mobile (width : 412)
 $m-H1: 32px;
@@ -17,6 +28,7 @@ $m-H3: 21px;
 $m-P: 14px;
 $m-smaller-text: 10px;
 
+<<<<<<< HEAD
 ///colors 
 
 $red: #F60B0E;
@@ -24,10 +36,20 @@ $red: #F60B0E;
 ///Backgrounds
 
 $darkest-backgrounds: #1B1B1B;
+=======
+///colors
+
+$red: #f60b0e;
+
+///Backgrounds
+
+$darkest-backgrounds: #1b1b1b;
+>>>>>>> youssef
 $dark-background: #222222;
 $white-background: #fefefe;
 $global-font-color: #717171;
 $nav-font-color: #777;
+<<<<<<< HEAD
 
 
 
@@ -61,3 +83,5 @@ $nav-font-color: #777;
 // Global font color: #717171
 
 // Nav font color: #777
+=======
+>>>>>>> youssef
