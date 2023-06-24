@@ -6,27 +6,91 @@ function myFunction() {
     x.className = "topnav";
   }
 }
-
 function myFunctiona() {
-  document.getElementById("header-gallery").style.backgroundImage =
-    "url(/images/gallery/slide-1.jpg)";
-  document.querySelector(".headerleft___p").innerHTML = "You<br> are locked in";
-  document.querySelector(".headerleft").style.animation =
-    "example 2s linear";
+  const headerGallery = document.getElementById("header-gallery");
+  headerGallery.style.backgroundImage = "url(/images/gallery/slide-1.jpg)";
+
+  const headerLeftP = document.querySelector(".headerleft___p");
+  headerLeftP.innerHTML = "You<br> are locked in";
+
+  const headerLeft = document.querySelector(".header-left");
+  headerLeft.style.animation = "none";
+  void headerLeft.offsetWidth;
+  headerLeft.style.animation = "example 0.5s linear";
+
+  headerGallery.style.animation = "none";
+  void headerGallery.offsetWidth;
+  headerGallery.style.animation = "fadeIn 1s both";
 }
+
 function myFunctionb() {
-  document.getElementById("header-gallery").style.backgroundImage =
-    "url(/images/gallery/slide-4.jpg)";
-  document.querySelector(".headerleft___p").innerHTML =
-    "Escape <br>in 60 mins?";
-  document.querySelector(".headerleft").style.animation =
-    "example 2s linear";
+  const headerGallery = document.getElementById("header-gallery");
+  headerGallery.style.backgroundImage = "url(/images/gallery/slide-4.jpg)";
+
+  const headerLeftP = document.querySelector(".headerleft___p");
+  headerLeftP.innerHTML = "Escape <br>in 60 mins?";
+
+  const headerLeft = document.querySelector(".header-left");
+  headerLeft.style.animation = "none";
+  void headerLeft.offsetWidth;
+  headerLeft.style.animation = "example 0.5s linear";
+
+  headerGallery.style.animation = "none";
+  void headerGallery.offsetWidth;
+  headerGallery.style.animation = "fadeIn 1s both";
 }
+
 function myFunctionc() {
-  document.getElementById("header-gallery").style.backgroundImage =
-    "url(/images/gallery/slide-2.jpg)";
-  document.querySelector(".headerleft___p").innerHTML =
-    "The Clock <br>is Ticking";
-  document.querySelector(".headerleft").style.animation =
-    "example 2s linear";
+  const headerGallery = document.getElementById("header-gallery");
+  headerGallery.style.backgroundImage = "url(/images/gallery/slide-2.jpg)";
+
+  const headerLeftP = document.querySelector(".headerleft___p");
+  headerLeftP.innerHTML = "The Clock <br>is Ticking";
+
+  const headerLeft = document.querySelector(".header-left");
+  headerLeft.style.animation = "none";
+  void headerLeft.offsetWidth;
+  headerLeft.style.animation = "example 0.5s linear";
+
+  headerGallery.style.animation = "none";
+  void headerGallery.offsetWidth;
+  headerGallery.style.animation = "fadeIn 1s both";
 }
+
+function revealOnScroll() {
+  var reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", revealOnScroll);
+
+///
+
+const slider = document.querySelector(".slider");
+const prevBtn = document.getElementById("prevBtn");
+const nextBtn = document.getElementById("nextBtn");
+
+let cardIndex = 0;
+const cardWidth = document.querySelector(".card").offsetWidth + 90;
+
+prevBtn.addEventListener("click", () => {
+  cardIndex = Math.max(cardIndex - 1, 0);
+  slider.style.transform = `translateX(-${cardIndex * cardWidth}px)`;
+});
+
+nextBtn.addEventListener("click", () => {
+  const numCards = document.querySelectorAll(".card").length;
+  cardIndex = Math.min(cardIndex + 1, numCards - 1);
+  slider.style.transform = `translateX(-${cardIndex * cardWidth}px)`;
+});
