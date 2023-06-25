@@ -1,47 +1,89 @@
+@use '../Abstracts/variables';
+
 @media (min-width: 413px) and (max-width:768px) {
     .contact {
+        padding: 15% 0;
         grid-template-columns: 1fr 2fr;
+
+        h2 {
+            font-size: variables.$m-H3;
+        }
 
         &__get-in-touch {
             grid-column: 1 / 2;
+            padding-right: 5%;
 
             .info {
+                grid-column-gap: 6%;
+                grid-row-gap: 10%;
+
                 .email {}
 
-                i {}
+                i {
+                    font-size: 32px;
+                }
 
-                p {}
+                p {
+                    font-size: variables.$m-P;
+                }
             }
         }
 
         &__contact-form {
             grid-column: 2 / 4;
 
-            .name {
-                #name {
-                    &:hover {}
+            .form {
+                grid-column-gap: 5%;
 
-                    &::placeholder {}
+                .name {
 
+                    #name {
+                        font-size: variables.$m-P;
+
+                        &:hover {}
+
+                        &::placeholder {}
+
+                    }
                 }
-            }
 
-            .mail {
-                #email {
-                    &::placeholder {}
+                .mail {
+                    #email {
+                        font-size: variables.$m-P;
+
+                        &::placeholder {}
+                    }
                 }
-            }
 
-            .message {
-                #message {
-                    &::placeholder {}
+                .message {
+                    #message {
+                        font-size: variables.$m-P;
+                        height: 150px;
+
+                        &::placeholder {}
+                    }
+                }
+
+                .submit-button {
+                    font-size: variables.$m-P;
                 }
             }
         }
-
-        .submit-button {}
-
     }
 
+    .map {
+        .map-small {
+            display: none;
+        }
+
+        .map-large {
+            display: none;
+        }
+
+        img {
+            top: 38%;
+            left: 44%;
+        }
+    }
 
 }

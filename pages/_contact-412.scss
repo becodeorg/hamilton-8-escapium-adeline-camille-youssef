@@ -1,45 +1,92 @@
+@use '../Abstracts/variables';
+
 @media (max-width: 412px) {
     .contact {
         grid-template-columns: 1fr;
 
+        h2 {
+            margin: 5% 0%;
+        }
+
         &__get-in-touch {
-            grid-column: 1 / 2;
 
             .info {
+                grid-column-gap: 6%;
+                grid-row-gap: 10%;
+
                 .email {}
 
-                i {}
+                i {
+                    padding: 5% 5% 0% 0%;
+                }
 
-                p {}
+                p {
+                    font-size: variables.$m-P;
+                    margin: 0%;
+                }
             }
         }
 
         &__contact-form {
-            grid-column: 2 / 4;
 
-            .name {
-                #name {
-                    &:hover {}
+            h2 {
+                padding-top: 8%;
+            }
 
-                    &::placeholder {}
+            .form {
+                grid-template-columns: 1fr;
 
+                .name {
+                    #name {
+                        height: 40%;
+                        font-size: variables.$m-P;
+                        margin-bottom: 5%;
+                        padding: 0% 0% 2% 0%;
+
+                        &:hover {}
+
+                        &::placeholder {}
+
+                    }
+                }
+
+                .mail {
+                    #email {
+                        height: 40%;
+                        font-size: variables.$m-P;
+                        margin-bottom: 5%;
+                        padding: 0% 0% 2% 0%;
+
+                        &::placeholder {}
+                    }
+                }
+
+                .message {
+                    #message {
+                        font-size: variables.$m-P;
+                        height: 150px;
+
+                        &::placeholder {}
+                    }
+                }
+
+                .submit-button {
+                    font-size: variables.$m-P;
+                    margin-bottom: 8%;
                 }
             }
 
-            .mail {
-                #email {
-                    &::placeholder {}
-                }
-            }
 
-            .message {
-                #message {
-                    &::placeholder {}
-                }
-            }
+        }
+    }
+
+    .map {
+        .map-medium {
+            display: none;
         }
 
-        .submit-button {}
-
+        .map-large {
+            display: none;
+        }
     }
 }

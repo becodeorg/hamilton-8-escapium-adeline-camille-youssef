@@ -1,6 +1,10 @@
 @media (max-width: 412px) {
     .footer {
         grid-template-columns: 1fr;
-        padding: 10% 40% 0% 4%
+        padding: 10% 4% 0% 4%;
+
+        &__hours {
+            padding-right: 40%;
+        }
     }
 }

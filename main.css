@@ -68,7 +68,7 @@ body {
 }
 .footer__down {
   text-align: center;
-  padding-top: 80px;
+  padding-top: 30%;
 }
 .footer__down p {
   font-size: 10px;
@@ -77,16 +77,20 @@ body {
 @media (max-width: 412px) {
   .footer {
     grid-template-columns: 1fr;
-    padding: 10% 40% 0% 4%;
+    padding: 10% 4% 0% 4%;
+  }
+  .footer__hours {
+    padding-right: 40%;
   }
 }
 @media (min-width: 413px) and (max-width: 768px) {
   .footer {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    padding: 7% 10% 2% 15%;
+    padding: 7% 5% 2% 5%;
   }
   .footer__down {
     grid-column: 1/5;
+    padding-top: 10%;
   }
 }
 @media (min-width: 769px) {
@@ -99,15 +103,15 @@ body {
   }
   .footer__down {
     grid-column: 1/5;
+    padding-top: 10%;
   }
 }
+/*  TODO Use % */
 .contact {
   background-color: #222222;
   display: grid;
   font-family: Hind;
   color: #717171;
-  font-size: 16px;
-  padding: 5% 15%;
 }
 .contact h2 {
   font-family: Montserrat;
@@ -126,12 +130,8 @@ body {
 }
 .contact__get-in-touch .info i {
   color: #fefefe;
-  font-size: 30px;
+  font-size: 40px;
   text-align: center;
-  padding: 30px;
-}
-.contact__get-in-touch .info p {
-  padding: 10px;
 }
 .contact__contact-form .form {
   display: grid;
@@ -147,8 +147,8 @@ body {
   font-weight: 400;
   font-size: 20px;
   width: 100%;
-  height: 30px;
   border-bottom: solid 3px #717171;
+  padding: 0% 0% 5% 0%;
 }
 .contact__contact-form .form .name #name:hover {
   border-color: #fefefe;
@@ -166,8 +166,8 @@ body {
   font-weight: 400;
   font-size: 20px;
   width: 100%;
-  height: 30px;
   border-bottom: solid 3px #717171;
+  padding: 0% 0% 5% 0%;
 }
 .contact__contact-form .form .mail #email:hover {
   border-color: #fefefe;
@@ -186,9 +186,8 @@ body {
   font-weight: 400;
   font-size: 20px;
   width: 100%;
-  height: 170px;
   border-bottom: solid 3px #717171;
-  margin: 10px 0px;
+  margin: 10% 2% 5% 0%;
 }
 .contact__contact-form .form .message #message:hover {
   border-color: #fefefe;
@@ -205,47 +204,169 @@ body {
   border-radius: 50px;
   border-style: none;
   height: 60px;
-  width: 100%;
+  width: 98%;
 }
 
 .map {
-  background-color: yellow;
+  position: relative;
+}
+.map iframe {
+  filter: grayscale(100%);
+}
+.map img {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+}
+.map .overlay {
+  background-color: rgba(34, 34, 34, 0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 @media (max-width: 412px) {
   .contact {
     grid-template-columns: 1fr;
   }
-  .contact__get-in-touch {
-    grid-column: 1/2;
+  .contact h2 {
+    margin: 5% 0%;
   }
-  .contact__contact-form {
-    grid-column: 2/4;
+  .contact__get-in-touch .info {
+    grid-column-gap: 6%;
+    grid-row-gap: 10%;
+  }
+  .contact__get-in-touch .info i {
+    padding: 5% 5% 0% 0%;
+  }
+  .contact__get-in-touch .info p {
+    font-size: 14px;
+    margin: 0%;
+  }
+  .contact__contact-form h2 {
+    padding-top: 8%;
+  }
+  .contact__contact-form .form {
+    grid-template-columns: 1fr;
+  }
+  .contact__contact-form .form .name #name {
+    height: 40%;
+    font-size: 14px;
+    margin-bottom: 5%;
+    padding: 0% 0% 2% 0%;
+  }
+  .contact__contact-form .form .mail #email {
+    height: 40%;
+    font-size: 14px;
+    margin-bottom: 5%;
+    padding: 0% 0% 2% 0%;
+  }
+  .contact__contact-form .form .message #message {
+    font-size: 14px;
+    height: 150px;
+  }
+  .contact__contact-form .form .submit-button {
+    font-size: 14px;
+    margin-bottom: 8%;
+  }
+  .map .map-medium {
+    display: none;
+  }
+  .map .map-large {
+    display: none;
   }
 }
 @media (min-width: 413px) and (max-width: 768px) {
   .contact {
+    padding: 15% 0;
     grid-template-columns: 1fr 2fr;
+  }
+  .contact h2 {
+    font-size: 21px;
   }
   .contact__get-in-touch {
     grid-column: 1/2;
+    padding-right: 5%;
+  }
+  .contact__get-in-touch .info {
+    grid-column-gap: 6%;
+    grid-row-gap: 10%;
+  }
+  .contact__get-in-touch .info i {
+    font-size: 32px;
+  }
+  .contact__get-in-touch .info p {
+    font-size: 14px;
   }
   .contact__contact-form {
     grid-column: 2/4;
+  }
+  .contact__contact-form .form {
+    grid-column-gap: 5%;
+  }
+  .contact__contact-form .form .name #name {
+    font-size: 14px;
+  }
+  .contact__contact-form .form .mail #email {
+    font-size: 14px;
+  }
+  .contact__contact-form .form .message #message {
+    font-size: 14px;
+    height: 150px;
+  }
+  .contact__contact-form .form .submit-button {
+    font-size: 14px;
+  }
+  .map .map-small {
+    display: none;
+  }
+  .map .map-large {
+    display: none;
+  }
+  .map img {
+    top: 38%;
+    left: 44%;
   }
 }
 @media (min-width: 769px) {
   .contact {
+    padding: 10% 15%;
     grid-template-columns: 1fr 2fr;
   }
   .contact__get-in-touch {
     grid-column: 1/2;
+    padding-right: 12%;
+  }
+  .contact__get-in-touch p {
+    font-size: 20px;
+  }
+  .contact__get-in-touch .info {
+    grid-column-gap: 6%;
+    grid-row-gap: 10%;
+  }
+  .contact__get-in-touch .info p {
+    font-size: 20px;
   }
   .contact__contact-form {
     grid-column: 2/4;
   }
-  .contact__contact-form .name #name:hover {
-    border-color: #fefefe;
+  .contact__contact-form .form {
+    grid-column-gap: 5%;
+  }
+  .contact__contact-form .form .message #message {
+    height: 200px;
+  }
+  .map .map-medium {
+    display: none;
+  }
+  .map .map-small {
+    display: none;
+  }
+  .map img {
+    top: 40%;
+    left: 48%;
   }
 }
 .header {
