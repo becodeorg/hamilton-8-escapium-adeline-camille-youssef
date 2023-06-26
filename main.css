@@ -378,14 +378,36 @@ body {
     left: 48%;
   }
 }
+button {
+  background-color: transparent;
+  margin: 5px;
+  border: 1px solid #717171;
+  color: #fefefe;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+button:hover {
+  border: 1px solid #f60b0e;
+  background-color: #f60b0e;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
 .header {
   background-image: url("./images/gallery/slide-1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
-  padding: 17rem 1rem;
-  color: white;
-  font-family: Hind;
+  padding: 9rem 1rem;
+  font-family: "Montserrat", sans-serif;
+}
+.header h1 {
+  color: #fefefe;
+  font-size: 44px;
 }
 
 .header p {
@@ -402,30 +424,27 @@ body {
   font-size: 11px;
   font-weight: 800;
   gap: 1%;
-  color: rgba(128, 128, 128, 0.726);
+  color: rgba(255, 255, 255, 0.726);
 }
 
 .categories {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  background-color: #222222;
+  background-color: #1b1b1b;
   padding: 5%;
   gap: 8%;
 }
-
 .categories .categories-left {
   width: 40%;
-  font-family: Hind;
+  font-family: "Hind Siliguri", sans-serif;
   font-weight: 800;
 }
-
 .categories .categories-left img {
   width: 100%;
   height: 12%;
   z-index: 0;
 }
-
 .categories .categories-left .container-under-img {
   color: white;
   background-color: #242424;
@@ -437,59 +456,39 @@ body {
   width: 100%;
   padding: 10% 5%;
 }
-
 .categories .categories-left .container-under-img .containerwithimg {
   text-align: center;
 }
-
 .categories .categories-left .container-under-img .containerwithimg img {
   width: 70%;
   padding-bottom: 1%;
 }
-
 .categories .categories-left .container-under-img p {
-  color: rgba(128, 128, 128, 0.726);
-  font-family: Hind;
+  color: #717171;
+  font-family: "Hind Siliguri", sans-serif;
   font-weight: 500;
   font-size: 17px;
   width: 100%;
 }
-
 .categories .categories-left .container-under-img h3 {
   font-size: 29px;
-  font-family: Hind;
+  font-family: "Hind Siliguri", sans-serif;
   font-weight: 700;
   width: 90%;
 }
-
 .categories .categories-left .container-under-img .text-under-img {
   text-align: center;
   padding-bottom: 3%;
 }
-
-.categories .categories-left .container-under-img .buttons-under-img {
-  padding-top: 3%;
-}
-
-.categories .categories-left .container-under-img .buttons-under-img button {
-  background-color: #242424;
-  border-radius: 20px;
-  border: 3px solid rgba(255, 255, 255, 0.171);
-  padding: 1.5% 3%;
-  color: white;
-}
-
 .categories .categories-left .emmy-container {
   border: 1px solid rgba(255, 255, 255, 0.247);
   padding: 5% 4%;
 }
-
 .categories .categories-left .emmy-container .part1 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-
 .categories .categories-left .emmy-container .part1 .left-side {
   position: relative;
   left: -13%;
@@ -497,72 +496,63 @@ body {
   flex-direction: row;
   gap: 3%;
 }
-
 .categories .categories-left .emmy-container .part1 .left-side img {
   width: 20%;
   height: auto;
   border-radius: 200px;
 }
-
 .categories .categories-left .emmy-container .part1 .left-side div {
   float: right;
   color: rgba(255, 255, 255, 0.664);
   padding-top: 2%;
 }
-
 .categories .categories-left .emmy-container .part1 .right-side {
   display: flex;
   flex-direction: row;
+  height: 25px;
   gap: 20%;
 }
-
 .categories .categories-left .emmy-container .part1 .right-side i {
-  border-radius: 40px;
-  font-size: 20px;
-  border: 2px red solid;
+  border-radius: 50px;
+  font-size: 15px;
+  border: 2px gray solid;
 }
-
 .categories .categories-left .emmy-container .part2 {
   color: rgba(255, 255, 255, 0.308);
 }
-
 .categories .categories-left .comments {
   padding: 40px 50px 20px 0;
 }
-
 .categories .categories-left .comments .part1 {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
 }
-
 .categories .categories-left .comments .part1 img {
   width: 100px;
   height: auto;
   border-radius: 200px;
 }
-
 .categories .categories-left .comments .part1 div {
   float: right;
   margin-left: 10px;
   margin-top: 15px;
   color: rgba(255, 255, 255, 0.664);
 }
-
+.categories .categories-left .comments .part2 {
+  color: rgba(255, 255, 255, 0.308);
+}
 .categories .categories-left .part2 {
   color: rgba(255, 255, 255, 0.308);
 }
-
 .categories .categories-left .part2 p {
   margin-bottom: 20px;
 }
-
 .categories .categories-left .part2 a {
   color: white;
   text-decoration: none;
 }
-
-.categories-right hr {
+.categories .categories-right hr {
   width: 30px;
   position: relative;
   right: 10px;
@@ -571,61 +561,41 @@ body {
   background-color: gray;
   border-radius: 2px;
 }
-
-.categories-right h3 {
+.categories .categories-right h3 {
   padding-bottom: 20px;
   color: white;
-  font-family: Hind;
+  font-family: "Hind Siliguri", sans-serif;
 }
-
-.categories-right .first-bloc p {
-  color: rgba(128, 128, 128, 0.651);
+.categories .categories-right .first-bloc p {
+  color: #717171;
   padding-top: 20px;
 }
-
-.categories-right .second-bloc {
+.categories .categories-right .second-bloc {
   padding-top: 50px;
 }
-
-.categories-right .second-bloc .pop-post-content {
+.categories .categories-right .second-bloc .pop-post-content {
   display: flex;
   flex-direction: row;
   align-items: center;
   padding-top: 40px;
 }
-
-.categories-right .second-bloc .pop-post-content hr {
+.categories .categories-right .second-bloc .pop-post-content hr {
   margin: 0 20px 0 40px;
 }
-
-.categories-right .second-bloc .pop-post-content p {
+.categories .categories-right .second-bloc .pop-post-content p {
   color: white;
 }
-
-.categories-right .second-bloc .pop-post-content p:first-child {
-  color: rgba(128, 128, 128, 0.603);
+.categories .categories-right .second-bloc .pop-post-content p:first-child {
+  color: #717171;
 }
-
-.categories-right .third-bloc {
+.categories .categories-right .third-bloc {
   width: 400px;
   padding-top: 50px;
 }
-
-.categories-right .third-bloc button {
-  margin-top: 10px;
-  background-color: #242424;
-  border-radius: 20px;
-  border: 3px solid rgba(255, 255, 255, 0.171);
-  padding: 10px 20px;
-  color: white;
-  margin-right: 10px;
-}
-
-.categories-right .fourth-bloc {
+.categories .categories-right .fourth-bloc {
   padding-top: 50px;
 }
-
-.categories-right .fourth-bloc .parent {
+.categories .categories-right .fourth-bloc .parent {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -633,45 +603,35 @@ body {
   grid-row-gap: 30px;
   padding-top: 40px;
 }
-
-.categories-right .fourth-bloc .div1 {
+.categories .categories-right .fourth-bloc .div1 {
   grid-area: 1/1/2/2;
 }
-
-.categories-right .fourth-bloc .div2 {
+.categories .categories-right .fourth-bloc .div2 {
   grid-area: 1/2/2/3;
 }
-
-.categories-right .fourth-bloc .div3 {
+.categories .categories-right .fourth-bloc .div3 {
   grid-area: 1/3/2/4;
 }
-
-.categories-right .fourth-bloc .div4 {
+.categories .categories-right .fourth-bloc .div4 {
   grid-area: 2/1/3/2;
 }
-
-.categories-right .fourth-bloc .div5 {
+.categories .categories-right .fourth-bloc .div5 {
   grid-area: 2/2/3/3;
 }
-
-.categories-right .fourth-bloc .div6 {
+.categories .categories-right .fourth-bloc .div6 {
   grid-area: 2/3/3/4;
 }
-
-.categories-right .fourth-bloc img {
+.categories .categories-right .fourth-bloc img {
   width: 100px;
 }
-
-.categories-right .fifth-bloc {
-  color: gray;
+.categories .categories-right .fifth-bloc {
+  color: #717171;
   margin-top: 50px;
 }
-
-.categories-right .fifth-bloc hr {
+.categories .categories-right .fifth-bloc hr {
   margin-bottom: 20px;
 }
-
-.categories-right .fifth-bloc p {
+.categories .categories-right .fifth-bloc p {
   line-height: 40px;
 }
 
@@ -961,6 +921,9 @@ body {
 .rooms {
   margin: 0%;
   background-color: #1b1b1b;
+}
+.rooms .topnav {
+  background-color: #353535;
 }
 .rooms a {
   text-decoration: none;
