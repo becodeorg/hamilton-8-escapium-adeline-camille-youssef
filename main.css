@@ -684,7 +684,7 @@
 }
 .rooms {
   margin: 0%;
-  background-color: #333;
+  background-color: #1b1b1b;
 }
 .rooms a {
   text-decoration: none;
@@ -719,7 +719,6 @@
   background-image: url(../images/gallery/slide-1.jpg);
   background-size: cover;
   background-position: center center;
-  height: 50vh;
   font-family: "Montserrat", sans-serif;
   text-align: center;
   display: flex;
@@ -745,6 +744,7 @@
   align-items: center;
   font-size: 27px;
   padding: 0%;
+  margin-bottom: 35%;
 }
 .rooms__header ul li {
   color: #fefefe;
@@ -757,12 +757,19 @@
   margin: 10px;
 }
 
+.card:hover {
+  background-size: 110%;
+}
+
 .card {
   margin: 0%;
-  background-color: #fff;
-  border: 1px solid #ccc;
-  padding: 20px;
   margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  font-family: "Hind Siliguri", sans-serif;
+}
+
+.card-content:hover {
+  background-size: 110%;
 }
 
 ul {
@@ -773,18 +780,14 @@ ul li {
   margin: 2px;
 }
 
-img {
-  height: 100px;
-  width: 100%;
-}
-
-.card h2 {
-  color: #333;
+h2 {
+  color: #ffffff;
   font-size: 20px;
+  margin: 2%;
 }
 
-.card p {
-  color: #666;
+p {
+  color: #717171;
   font-size: 14px;
 }
 
@@ -817,9 +820,10 @@ img {
   }
 }
 .card-container {
+  margin: 10%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 25px;
   margin-top: 20px; /* Adjust the margin as per your preference */
 }
 @media screen and (max-width: 1200px) {
@@ -832,4 +836,38 @@ img {
     grid-template-columns: 1fr;
     margin-top: 10px; /* Adjust the margin as per your preference */
   }
+}
+
+.error {
+  color: white;
+  background-color: #1b1b1b;
+  padding: 20%;
+  text-align: center;
+  font-family: "Hind Siliguri", sans-serif;
+}
+.error a {
+  text-decoration: none;
+}
+.error a:visited {
+  color: white;
+}
+.error h1 {
+  margin: 15px;
+}
+.error button {
+  background-color: transparent;
+  border: 1px solid #717171;
+  color: #fefefe;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 25px;
+  cursor: pointer;
+  margin: 2vw;
+}
+.error button:hover {
+  border: 1px solid #f60b0e;
+  background-color: #f60b0e;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
 }/*# sourceMappingURL=main.css.map */

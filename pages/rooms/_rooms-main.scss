@@ -1,10 +1,7 @@
-.card-with-background .card-background {
-    background-image: url(${cardData.photos[0]});
-  }
 
 .rooms {
     margin: 0%;
-    background-color: #333;
+    background-color: $darkest-backgrounds;
     a {
         text-decoration: none;
     }
@@ -44,7 +41,6 @@
     background-image: url(../images/gallery/slide-1.jpg);
     background-size: cover;
     background-position: center center;
-    height: 50vh;
     font-family: $fontHeadings;
     text-align: center;
     display: flex;
@@ -72,6 +68,7 @@
         align-items: center;
         font-size: 27px;
         padding: 0%;
+        margin-bottom: 35%;
 
         li {
             color: $white-background;
@@ -87,13 +84,21 @@
     }
 }
 
+.card:hover{
+  background-size: 110%;
+  
+}
 .card {
     margin: 0%;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    padding: 20px;
     margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    font-family: $FontParagraphs;
   }
+  
+  .card-content:hover{
+background-size: 110%;
+  }
+
   ul {
     display: flex;
     padding: 0%;
@@ -101,15 +106,15 @@
         margin: 2px;
     }
   }
-  .card h2 {
-    color: #333;
+  h2 {
+    color: #ffffff;
     font-size: 20px;
+    margin: 2%;
   }
   
-  .card p {
-    color: #666;
+  p {
+    color: $global-font-color;
     font-size: 14px;
   }
-
- 
+  
   

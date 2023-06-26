@@ -126,42 +126,102 @@ const jsonData = [
     }
   ];
   
-  function createCard(cardData) {
-    const card = document.createElement("div");
-    card.classList.add("card");
+  const cardContainer = document.querySelector(".card-container");
+
+// Fonction pour créer un élément de carte
+function createCard(cardData, index) {
+  const card = document.createElement("div");
+  card.classList.add("card");
+  card.classList.add(`card-${index}`); // Add class based on index
   
-    card.classList.add("card-with-background");
+
+  const cardPhotos = cardData.photos[0];
+
+  card.innerHTML = `
+    <div class="card-photos">
+      <div class="card__content">
+        <ul class="difficulty-icons">
+          <li><i class="fa-solid fa-lock"></i></li>
+          <li><i class="fa-solid fa-lock"></i></li>
+          <li><i class="fa-solid fa-lock"></i></li>
+          <li><i class="fa-solid fa-lock"></i></li>
+          <li><i class="fa-solid fa-lock"></i></li>
+        </ul>
+        <h2>${cardData.name}</h2>
+        <ul>
+          <li><p><i class="fa-solid fa-user-group"></i> ${cardData.players[0]}-${cardData.players[1]}</p></li>
+          <li><p><i class="fa-regular fa-clock"></i> ${cardData.minutes} minutes</p></li>
+          <li><p><i class="fa-solid fa-location-dot"></i> ${cardData.location}</p></li>
+        </ul>
+      </div>
+    </div>
+  `;
+
+ const cardPhotosContainer = card.querySelector(".card-photos");
+cardPhotosContainer.style.backgroundImage = `linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url(${cardPhotos})`;
+cardPhotosContainer.style.backgroundRepeat = "no-repeat";
+cardPhotosContainer.style.backgroundSize = "cover";
+cardPhotosContainer.style.backgroundPosition = "center";
+
   
-    card.innerHTML = `
-      <h2>${cardData.name}</h2>
-      <p><i class="fa-solid fa-user-group"></i> ${cardData.players[0]}-${cardData.players[1]}</p>
-      <p><i class="fa-regular fa-clock"></i> ${cardData.minutes} minutes</p>
-      <p><i class="fa-solid fa-location-dot"></i>: ${cardData.location}</p>
-      <ul class="difficulty-icons">
-        <li><i class="fa-solid fa-lock"></i></li>
-        <li><i class="fa-solid fa-lock"></i></li>
-        <li><i class="fa-solid fa-lock"></i></li>
-        <li><i class="fa-solid fa-lock"></i></li>
-        <li><i class="fa-solid fa-lock"></i></li>
-      </ul>
-      <div class="card-background"></div>
-    `;
-  
-    const difficultyIcons = card.querySelectorAll(".difficulty-icons li");
-    const difficulty = cardData.difficulty;
-  
-    for (let i = 0; i < difficulty; i++) {
-      difficultyIcons[i].querySelector("i.fa-solid.fa-lock").style.color = "red";
+
+  const cardContent = card.querySelector(".card__content");
+  cardContent.style.padding = "35px";
+  cardContent.style.paddingTop = "250px";
+
+  const difficultyIcons = card.querySelectorAll(".difficulty-icons li");
+  const difficulty = cardData.difficulty;
+
+  for (let i = 0; i < difficultyIcons.length; i++) {
+    const padlockIcon = difficultyIcons[i].querySelector("i.fa-solid.fa-lock");
+    if (i < difficulty) {
+      padlockIcon.style.color = "red";
+    } else {
+      padlockIcon.style.color = "gray";
     }
-  
-    const cardBackground = card.querySelector(".card-background");
-    cardBackground.style.backgroundImage = `url(${cardData.photos[0]})`;
-  
-    return card;
   }
   
-  // Générer les cartes à partir des données JSON
-  jsonData.forEach(data => {
-    const card = createCard(data);
-    cardContainer.appendChild(card);
+
+  card.addEventListener("click", () => {
+    // Open new HTML page with object information
+    window.location.href = `room.html?index=${index}`;
   });
+  
+  
+
+  return card;
+}
+
+// Générer les cartes à partir des données JSON
+jsonData.forEach((data, index) => {
+  const card = createCard(data, index);
+  cardContainer.appendChild(card);
+});
+
+// Function to filter and display cards based on the selected difficulty level
+function filterCards(difficultyLevel) {
+  const cardContainer = document.querySelector(".card-container");
+  const cards = cardContainer.querySelectorAll(".card");
+
+  cards.forEach((card) => {
+    const cardDifficulty = jsonData[parseInt(card.classList[1].split("-")[1])].difficulty;
+
+    // Show all cards if "All" button is clicked
+    if (difficultyLevel === "all") {
+      card.style.display = "block";
+    }
+    // Show cards with difficulty level >= 2 if "Easy" button is clicked
+    else if (difficultyLevel === "easy") {
+      card.style.display = cardDifficulty === 2 ? "block" : "none";
+    }
+    // Show cards with difficulty level = 3 if "Normal" button is clicked
+    else if (difficultyLevel === "normal") {
+      card.style.display = cardDifficulty === 3 ? "block" : "none";
+    }
+    // Show cards with difficulty level >= 4 if "Hard" button is clicked
+    else if (difficultyLevel === "hard") {
+      card.style.display = cardDifficulty >= 4 ? "block" : "none";
+    }
+  });
+}
+

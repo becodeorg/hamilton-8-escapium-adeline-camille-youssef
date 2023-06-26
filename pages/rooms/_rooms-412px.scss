@@ -18,9 +18,10 @@
   }
 
   .card-container {
+    margin: 10%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 25px;
     margin-top: 20px; /* Adjust the margin as per your preference */
 
     // Responsive styles
