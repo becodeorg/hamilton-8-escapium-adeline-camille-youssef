@@ -1,10 +1,7 @@
-
 .rooms {
+  
     margin: 0%;
     background-color: $darkest-backgrounds;
-    .topnav{
-      background-color: #353535;
-    }
     a {
         text-decoration: none;
     }
@@ -51,16 +48,19 @@
     justify-content: center;
     align-items: center;
 
+    .header__title{
+      display: flex;
+      flex-direction: row;
+    }
     h1 {
         font-size: $bs-H1;
         color: $white-background;
         padding-top: 5%;
 
-        span {
+        strong {
             font-family: Georgia, 'Times New Roman', Times, serif;
             color: $red;
             font-size: 145px;
-            margin-left: -47px;
         }
     }
 
@@ -71,7 +71,7 @@
         align-items: center;
         font-size: 27px;
         padding: 0%;
-        margin-bottom: 35%;
+        margin-bottom: 15%;
 
         li {
             color: $white-background;

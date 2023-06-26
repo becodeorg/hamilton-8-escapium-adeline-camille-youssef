@@ -2,24 +2,7 @@
 @import "./blog-768px";
 @import "./blog-412px";
 
-button {
-  background-color: transparent;
-  margin: 5px;
-  border: 1px solid $global-font-color;
-  color: $white-background;
-  padding: 10px 20px;
-  font-size: 16px;
-  border-radius: 25px;
-  cursor: pointer;
-}
 
-button:hover {
-  border: 1px solid $red;
-  background-color: $red;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-}
 
 .header {
   background-image: url("./images/gallery/slide-1.jpg");
