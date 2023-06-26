@@ -1,9 +1,10 @@
 .error{
     color : white;
-    background-color: $darkest-backgrounds;
+    background-color: $dark-background;
     padding: 8%;
     text-align: center;
-    font-family: $dark-background;
+    font-family: $fontHeadings;
+    font-size: xx-large;
 
     a{
         text-decoration: none;
