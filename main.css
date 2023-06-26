@@ -139,6 +139,7 @@ body {
   width: 100%;
 }
 .contact__contact-form .form .name #name {
+  color: #717171;
   background-color: #222222;
   border: none;
   font-family: "Hind", sans-serif;
@@ -158,6 +159,7 @@ body {
   width: 100%;
 }
 .contact__contact-form .form .mail #email {
+  color: #717171;
   background-color: #222222;
   font-family: "Hind", sans-serif;
   border: none;
@@ -179,6 +181,7 @@ body {
 }
 .contact__contact-form .form .message #message {
   background-color: #222222;
+  color: #717171;
   font-family: "Hind", sans-serif;
   border: none;
   font-weight: 400;
@@ -203,6 +206,11 @@ body {
   border-style: none;
   height: 60px;
   width: 98%;
+}
+.contact__contact-form .form .submit-button:hover {
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  filter: grayscale(20%);
 }
 
 .map {
