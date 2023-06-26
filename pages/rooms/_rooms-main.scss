@@ -87,18 +87,18 @@
     }
 }
 
-.card:hover{
+.cards:hover{
   background-size: 110%;
   
 }
-.card {
+.cards {
     margin: 0%;
     margin-bottom: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     font-family: $FontParagraphs;
   }
   
-  .card-content:hover{
+  .cards-content:hover{
 background-size: 110%;
   }
 

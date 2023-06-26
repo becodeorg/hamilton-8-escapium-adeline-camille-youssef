@@ -976,7 +976,7 @@ header p {
 }
 
 #header-gallery {
-  background-image: url("/images/gallery/slide-4.jpg");
+  background-image: url(images/gallery/slide-4.jpg);
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1208,7 +1208,7 @@ header p {
 }
 
 .who-can-play {
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.8351715686) 55%, rgba(255, 255, 255, 0) 100%), url("/images/gallery/room-7.jpg");
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.8351715686) 55%, rgba(255, 255, 255, 0) 100%), url(images/gallery/room-7.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -1705,18 +1705,18 @@ header p {
   margin: 10px;
 }
 
-.card:hover {
+.cards:hover {
   background-size: 110%;
 }
 
-.card {
+.cards {
   margin: 0%;
   margin-bottom: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   font-family: "Hind", sans-serif;
 }
 
-.card-content:hover {
+.cards-content:hover {
   background-size: 110%;
 }
 
@@ -1755,7 +1755,7 @@ p {
     width: 60%;
   }
 }
-.card-container {
+.cards-container {
   margin: 10%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -1763,12 +1763,12 @@ p {
   margin-top: 20px; /* Adjust the margin as per your preference */
 }
 @media screen and (max-width: 1200px) {
-  .card-container {
+  .cards-container {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 @media screen and (max-width: 768px) {
-  .card-container {
+  .cards-container {
     grid-template-columns: 1fr;
     margin-top: 10px; /* Adjust the margin as per your preference */
   }

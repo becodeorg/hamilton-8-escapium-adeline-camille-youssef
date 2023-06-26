@@ -127,20 +127,20 @@ const jsonData = [
   ];
   
 //select the HTML element
-const cardContainer = document.querySelector(".card-container");
+const cardContainer = document.querySelector(".cards-container");
 
 // Function to create cards elements
 function createCard(cardData, index) {
-  const card = document.createElement("div");
-  card.classList.add("card");
-  card.classList.add(`card-${index}`); // Add class based on index
+  const cards = document.createElement("div");
+  cards.classList.add("cards");
+  cards.classList.add(`cards-${index}`); // Add class based on index
   
   //Taking the first image of the array for the background
   const cardPhotos = cardData.photos[0];
 
-  //Create the HTML for the card
-  card.innerHTML = `
-    <div class="card-photos">
+  //Create the HTML for the cards
+  cards.innerHTML = `
+    <div class="cards-photos">
       <div class="card__content">
         <ul class="difficulty-icons">
           <li><i class="fa-solid fa-lock"></i></li>
@@ -159,8 +159,8 @@ function createCard(cardData, index) {
     </div>
   `;
 
-  //style of the card background
-    const cardPhotosContainer = card.querySelector(".card-photos");
+  //style of the cards background
+    const cardPhotosContainer = cards.querySelector(".cards-photos");
     cardPhotosContainer.style.backgroundImage = `linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url(${cardPhotos})`;
     cardPhotosContainer.style.backgroundRepeat = "no-repeat";
     cardPhotosContainer.style.backgroundSize = "cover";
@@ -168,12 +168,12 @@ function createCard(cardData, index) {
 
   
   //More style but for the text now
-  const cardContent = card.querySelector(".card__content");
+  const cardContent = cards.querySelector(".card__content");
   cardContent.style.padding = "35px";
   cardContent.style.paddingTop = "250px";
 
   //Loop for displaying padlocks with difficulty visibility 
-  const difficultyIcons = card.querySelectorAll(".difficulty-icons li");
+  const difficultyIcons = cards.querySelectorAll(".difficulty-icons li");
   const difficulty = cardData.difficulty;
 
   for (let i = 0; i < difficultyIcons.length; i++) {
@@ -186,44 +186,44 @@ function createCard(cardData, index) {
   }
   
 // Open new HTML page with object information [unfinished]
-  card.addEventListener("click", () => {
+  cards.addEventListener("click", () => {
     window.location.href = `room.html?index=${index}`;
   });
   
   
 
-  return card;
+  return cards;
 }
 
-// Display the card
+// Display the cards
 jsonData.forEach((data, index) => {
-  const card = createCard(data, index);
-  cardContainer.appendChild(card);
+  const cards = createCard(data, index);
+  cardContainer.appendChild(cards);
 });
 
 // Function to filter and display cards based on the difficulty level
 function filterCards(difficultyLevel) {
-  const cardContainer = document.querySelector(".card-container");
-  const cards = cardContainer.querySelectorAll(".card");
+  const cardContainer = document.querySelector(".cards-container");
+  const cards = cardContainer.querySelectorAll(".cards");
 
-  cards.forEach((card) => {
-    const cardDifficulty = jsonData[parseInt(card.classList[1].split("-")[1])].difficulty;
+  cards.forEach((cards) => {
+    const cardDifficulty = jsonData[parseInt(cards.classList[1].split("-")[1])].difficulty;
 
     // Show all cards if "All" is clicked
     if (difficultyLevel === "all") {
-      card.style.display = "block";
+      cards.style.display = "block";
     }
     // Show cards with difficulty level = 2 if "Easy" is clicked
     else if (difficultyLevel === "easy") {
-      card.style.display = cardDifficulty === 2 ? "block" : "none";
+      cards.style.display = cardDifficulty === 2 ? "block" : "none";
     }
     // Show cards with difficulty level = 3 if "Normal" is clicked
     else if (difficultyLevel === "normal") {
-      card.style.display = cardDifficulty === 3 ? "block" : "none";
+      cards.style.display = cardDifficulty === 3 ? "block" : "none";
     }
     // Show cards with difficulty level >= 4 if "Hard" is clicked
     else if (difficultyLevel === "hard") {
-      card.style.display = cardDifficulty >= 4 ? "block" : "none";
+      cards.style.display = cardDifficulty >= 4 ? "block" : "none";
     }
   });
 }
