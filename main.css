@@ -1181,6 +1181,7 @@
   height: auto;
   width: 100%;
   position: relative;
+  border: 2px rgba(255, 0, 0, 0) solid;
 }
 .gallery .gallery img:hover {
   animation: animated-border 3s linear infinite;
@@ -2099,6 +2100,7 @@
   height: auto;
   width: 100%;
   position: relative;
+  border: 2px rgba(255, 0, 0, 0) solid;
 }
 .gallery .gallery img:hover {
   animation: animated-border 3s linear infinite;

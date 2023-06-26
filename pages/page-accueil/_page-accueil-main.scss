@@ -339,6 +339,7 @@
       height: auto;
       width: 100%;
       position: relative;
+      border: 2px rgba(255, 0, 0, 0) solid;
       &:hover {
         animation: animated-border 3s linear infinite;
       }
@@ -394,7 +395,7 @@
       color: rgb(255, 255, 255);
       padding-bottom: 10%;
     }
-    #fname{
+    #fname {
       color: gray;
       background-color: #222222;
       border: none;
@@ -403,7 +404,7 @@
       margin-bottom: 5%;
       width: 60%;
     }
-    #button{
+    #button {
       background-color: #222222;
       border: 2px;
       font-size: 15px;
@@ -412,13 +413,13 @@
       padding: 1% 2%;
       color: gray;
       transition: 1s;
-      &:hover{
+      &:hover {
         background-color: pink;
       }
     }
   }
 }
-.ready{
+.ready {
   background-color: #ffffff;
   padding: 5% 0;
   display: flex;
@@ -440,11 +441,11 @@
     color: rgb(0, 0, 0);
     padding-bottom: 2%;
   }
-  p{
+  p {
     font-size: 2vw;
     padding-bottom: 2%;
   }
-  button{
+  button {
     border: none;
     border-radius: 30px;
     padding: 1% 2%;
@@ -453,7 +454,7 @@
     color: white;
     font-weight: 800;
     transition: 1s;
-    &:hover{
+    &:hover {
       background-color: blue;
     }
   }

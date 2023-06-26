@@ -82,7 +82,7 @@ const prevBtn = document.getElementById("prevBtn");
 const nextBtn = document.getElementById("nextBtn");
 
 let cardIndex = 0;
-const cardWidth = document.querySelector(".card").offsetWidth + 170;
+const cardWidth = document.querySelector(".card").offsetWidth + 110;
 
 prevBtn.addEventListener("click", () => {
   cardIndex = Math.max(cardIndex - 1, 0);
