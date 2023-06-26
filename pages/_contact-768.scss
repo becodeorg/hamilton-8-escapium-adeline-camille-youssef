@@ -6,7 +6,7 @@
         grid-template-columns: 1fr 2fr;
 
         h2 {
-            font-size: variables.$m-H3;
+            font-size: variables.$m-H1;
         }
 
         &__get-in-touch {
@@ -21,6 +21,7 @@
 
                 i {
                     font-size: 32px;
+                    padding: 25% 30% 20% 0%;
                 }
 
                 p {

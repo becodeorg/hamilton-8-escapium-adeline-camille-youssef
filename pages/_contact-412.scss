@@ -6,6 +6,8 @@
 
         h2 {
             margin: 5% 0%;
+            font-size: variables.$m-H1;
+
         }
 
         &__get-in-touch {
@@ -17,7 +19,8 @@
                 .email {}
 
                 i {
-                    padding: 5% 5% 0% 0%;
+                    font-size: 30px;
+                    padding: 10% 30% 10% 0%;
                 }
 
                 p {

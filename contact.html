@@ -10,6 +10,7 @@
     </style>
     <script src="https://kit.fontawesome.com/11dcc4e06b.js" crossorigin="anonymous"></script>
     <link href="main.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -59,16 +60,16 @@
                 <form>
                     <div class="form">
                         <div class="name">
-                            <input placeholder="Name" type="text" id="name" name="name" required>
+                            <input placeholder="Name" type="text" id="name" name="name">
                         </div>
                         <div class="mail">
-                            <input placeholder="Email Address" type="email" id="email" name="email" required>
+                            <input placeholder="Email Address" id="email" name="email">
                         </div>
                         <div class="message">
-                            <textarea placeholder="Your Message..." id="message" name="message" required></textarea>
+                            <textarea placeholder="Your Message..." id="message" name="message"></textarea>
                         </div>
 
-                        <input class="submit-button" type="submit" value="Send Message">
+                        <input class="submit-button" type="submit" value="Send Message" id="submit-button">
 
                     </div>
                 </form>
@@ -153,6 +154,8 @@
             </div>
         </div>
     </footer>
+    <script src="contact-function.js" type="text/javascript"></script>
+    <script src="contact.js" type="text/javascript"></script>
 </body>
 
 </html>
