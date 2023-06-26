@@ -8,7 +8,9 @@ function displayAnAlertIfEmailNotValid() {
     console.log(inputValue);
 
     if (inputValue === "") {
-        return alert('Invalid email address')
+        return alert('Empty email address')
+    } else if { (inputValue < 10)
+
     }
 
 

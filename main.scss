@@ -8,6 +8,10 @@
 @use "pages/contact-412";
 @use "pages/contact-768";
 @use "pages/contact-1920";
+@use "layout/header";
+@use "layout/header-412";
+@use "layout/header-768";
+@use "layout/header-1920";
 
 
 @import "./pages/page-blog/_blog-412px.scss";
