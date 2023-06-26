@@ -973,25 +973,6 @@ header p {
   width: 90% !important;
 }
 
-button {
-  background-color: transparent;
-  border: 1px solid #717171;
-  color: #fefefe;
-  padding: 10px 20px;
-  font-size: 16px;
-  border-radius: 25px;
-  cursor: pointer;
-  margin: 5px;
-}
-
-button:hover {
-  border: 1px solid #f60b0e;
-  background-color: #f60b0e;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-}
-
 #header-gallery {
   background-image: url("/images/gallery/slide-4.jpg");
   width: 100%;
@@ -1678,7 +1659,7 @@ button:hover {
 }
 
 .rooms__header {
-  background-image: url(../images/gallery/slide-1.jpg);
+  background-image: url(images/gallery/slide-1.jpg);
   background-size: cover;
   background-position: center center;
   font-family: "Montserrat", sans-serif;
