@@ -450,6 +450,24 @@ header p {
     padding-bottom: 10%;
   }
 }
+.blog__body button {
+  background-color: transparent;
+  border: 1px solid #717171;
+  color: #fefefe;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 25px;
+  cursor: pointer;
+  margin: 5px;
+}
+.blog__body button:hover {
+  border: 1px solid #f60b0e;
+  background-color: #f60b0e;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
 .header {
   background-image: url("./images/gallery/slide-1.jpg");
   background-repeat: no-repeat;
@@ -953,6 +971,25 @@ header p {
   padding-bottom: 1%;
   margin-bottom: 10% !important;
   width: 90% !important;
+}
+
+button {
+  background-color: transparent;
+  border: 1px solid #717171;
+  color: #fefefe;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 25px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+button:hover {
+  border: 1px solid #f60b0e;
+  background-color: #f60b0e;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
 }
 
 #header-gallery {
