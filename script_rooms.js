@@ -1,4 +1,4 @@
-// script.js
+// JSON data
 const jsonData = [
     {
       "name": "Magic Imporium",
@@ -126,17 +126,19 @@ const jsonData = [
     }
   ];
   
-  const cardContainer = document.querySelector(".card-container");
+//select the HTML element
+const cardContainer = document.querySelector(".card-container");
 
-// Fonction pour créer un élément de carte
+// Function to create cards elements
 function createCard(cardData, index) {
   const card = document.createElement("div");
   card.classList.add("card");
   card.classList.add(`card-${index}`); // Add class based on index
   
-
+  //Taking the first image of the array for the background
   const cardPhotos = cardData.photos[0];
 
+  //Create the HTML for the card
   card.innerHTML = `
     <div class="card-photos">
       <div class="card__content">
@@ -157,18 +159,20 @@ function createCard(cardData, index) {
     </div>
   `;
 
- const cardPhotosContainer = card.querySelector(".card-photos");
-cardPhotosContainer.style.backgroundImage = `linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url(${cardPhotos})`;
-cardPhotosContainer.style.backgroundRepeat = "no-repeat";
-cardPhotosContainer.style.backgroundSize = "cover";
-cardPhotosContainer.style.backgroundPosition = "center";
+  //style of the card background
+    const cardPhotosContainer = card.querySelector(".card-photos");
+    cardPhotosContainer.style.backgroundImage = `linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url(${cardPhotos})`;
+    cardPhotosContainer.style.backgroundRepeat = "no-repeat";
+    cardPhotosContainer.style.backgroundSize = "cover";
+    cardPhotosContainer.style.backgroundPosition = "center";
 
   
-
+  //More style but for the text now
   const cardContent = card.querySelector(".card__content");
   cardContent.style.padding = "35px";
   cardContent.style.paddingTop = "250px";
 
+  //Loop for displaying padlocks with difficulty visibility 
   const difficultyIcons = card.querySelectorAll(".difficulty-icons li");
   const difficulty = cardData.difficulty;
 
@@ -181,9 +185,8 @@ cardPhotosContainer.style.backgroundPosition = "center";
     }
   }
   
-
+// Open new HTML page with object information [unfinished]
   card.addEventListener("click", () => {
-    // Open new HTML page with object information
     window.location.href = `room.html?index=${index}`;
   });
   
@@ -192,13 +195,13 @@ cardPhotosContainer.style.backgroundPosition = "center";
   return card;
 }
 
-// Générer les cartes à partir des données JSON
+// Display the card
 jsonData.forEach((data, index) => {
   const card = createCard(data, index);
   cardContainer.appendChild(card);
 });
 
-// Function to filter and display cards based on the selected difficulty level
+// Function to filter and display cards based on the difficulty level
 function filterCards(difficultyLevel) {
   const cardContainer = document.querySelector(".card-container");
   const cards = cardContainer.querySelectorAll(".card");
@@ -206,19 +209,19 @@ function filterCards(difficultyLevel) {
   cards.forEach((card) => {
     const cardDifficulty = jsonData[parseInt(card.classList[1].split("-")[1])].difficulty;
 
-    // Show all cards if "All" button is clicked
+    // Show all cards if "All" is clicked
     if (difficultyLevel === "all") {
       card.style.display = "block";
     }
-    // Show cards with difficulty level >= 2 if "Easy" button is clicked
+    // Show cards with difficulty level = 2 if "Easy" is clicked
     else if (difficultyLevel === "easy") {
       card.style.display = cardDifficulty === 2 ? "block" : "none";
     }
-    // Show cards with difficulty level = 3 if "Normal" button is clicked
+    // Show cards with difficulty level = 3 if "Normal" is clicked
     else if (difficultyLevel === "normal") {
       card.style.display = cardDifficulty === 3 ? "block" : "none";
     }
-    // Show cards with difficulty level >= 4 if "Hard" button is clicked
+    // Show cards with difficulty level >= 4 if "Hard" is clicked
     else if (difficultyLevel === "hard") {
       card.style.display = cardDifficulty >= 4 ? "block" : "none";
     }

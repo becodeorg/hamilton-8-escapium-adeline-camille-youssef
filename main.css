@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap");
+body {
+  margin: 0;
+}
+
 .background-exit {
   background-image: url("images/gallery/footer-bg.jpg");
   background-size: cover;
@@ -9,14 +11,14 @@
 }
 
 .footer {
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(34, 34, 34, 0.9);
   color: #717171;
   display: grid;
 }
 .footer h2 {
   font-family: "Montserrat", sans-serif;
   font-size: 19px;
-  color: white;
+  color: #fefefe;
   padding-left: 30px;
 }
 .footer h3 {
@@ -26,7 +28,7 @@
   font-weight: 200;
 }
 .footer h3 i {
-  color: red;
+  color: #f60b0e;
 }
 .footer p {
   font-family: "Hind Siliguri", sans-serif;
@@ -54,50 +56,328 @@
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  color: white;
+  color: #fefefe;
   text-align: center;
   line-height: 36px;
   margin: 4px;
 }
+.footer__social .icons i:hover {
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  background-color: #f60b0e;
+}
 .footer__down {
   text-align: center;
-  padding-top: 80px;
+  padding-top: 30%;
 }
 .footer__down p {
   font-size: 10px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 412px) {
   .footer {
     grid-template-columns: 1fr;
-    padding: 50px;
+    padding: 10% 4% 0% 4%;
+  }
+  .footer__hours {
+    padding-right: 40%;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 413px) and (max-width: 768px) {
   .footer {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    padding: 50px;
+    padding: 7% 5% 2% 5%;
   }
   .footer__down {
     grid-column: 1/5;
+    padding-top: 10%;
   }
 }
 @media (min-width: 769px) {
   .footer {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    padding: 100px 360px 50px 360px;
+    padding: 7% 10% 2% 15%;
   }
   .footer p {
     font-size: 16px;
   }
   .footer__down {
     grid-column: 1/5;
+    padding-top: 10%;
   }
 }
-* {
-  margin: 0;
+/*  TODO Use % */
+.contact {
+  background-color: #222222;
+  display: grid;
+  font-family: "Hind Siliguri", sans-serif;
+  color: #717171;
+}
+.contact h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 44px;
+  color: #fefefe;
+}
+.contact p {
+  font-weight: 400;
+}
+.contact__get-in-touch .info {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+.contact__get-in-touch .info .email {
+  color: #fefefe;
+}
+.contact__get-in-touch .info i {
+  color: #fefefe;
+  font-size: 40px;
+  text-align: center;
+}
+.contact__contact-form .form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.contact__contact-form .form .name {
+  width: 100%;
+}
+.contact__contact-form .form .name #name {
+  background-color: #222222;
+  border: none;
+  font-family: "Hind Siliguri", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  width: 100%;
+  border-bottom: solid 3px #717171;
+  padding: 0% 0% 5% 0%;
+}
+.contact__contact-form .form .name #name:hover {
+  border-color: #fefefe;
+}
+.contact__contact-form .form .name #name::-moz-placeholder {
+  grid-column: 1/2;
+}
+.contact__contact-form .form .name #name::placeholder {
+  grid-column: 1/2;
+}
+.contact__contact-form .form .mail {
+  width: 100%;
+}
+.contact__contact-form .form .mail #email {
+  background-color: #222222;
+  font-family: "Hind Siliguri", sans-serif;
+  border: none;
+  font-weight: 400;
+  font-size: 20px;
+  width: 100%;
+  border-bottom: solid 3px #717171;
+  padding: 0% 0% 5% 0%;
+}
+.contact__contact-form .form .mail #email:hover {
+  border-color: #fefefe;
+}
+.contact__contact-form .form .mail #email::-moz-placeholder {
+  grid-column: 2/3;
+}
+.contact__contact-form .form .mail #email::placeholder {
+  grid-column: 2/3;
+}
+.contact__contact-form .form .message {
+  width: 100%;
+  grid-column: 1/-1;
+}
+.contact__contact-form .form .message #message {
+  background-color: #222222;
+  font-family: "Hind Siliguri", sans-serif;
+  border: none;
+  font-weight: 400;
+  font-size: 20px;
+  width: 100%;
+  border-bottom: solid 3px #717171;
+  margin: 10% 2% 5% 0%;
+}
+.contact__contact-form .form .message #message:hover {
+  border-color: #fefefe;
+}
+.contact__contact-form .form .message #message::-moz-placeholder {
+  background-color: #222222;
+}
+.contact__contact-form .form .message #message::placeholder {
+  background-color: #222222;
+}
+.contact__contact-form .form .submit-button {
+  grid-column: 1/-1;
+  background-color: #f60b0e;
+  color: #fefefe;
+  font-weight: 600;
+  font-size: 18px;
+  border-radius: 50px;
+  border-style: none;
+  height: 60px;
+  width: 98%;
 }
 
+.map {
+  position: relative;
+}
+.map iframe {
+  filter: grayscale(100%);
+}
+.map img {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+}
+.map .overlay {
+  background-color: rgba(34, 34, 34, 0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 412px) {
+  .contact {
+    grid-template-columns: 1fr;
+  }
+  .contact h2 {
+    margin: 5% 0%;
+  }
+  .contact__get-in-touch .info {
+    grid-column-gap: 6%;
+    grid-row-gap: 10%;
+  }
+  .contact__get-in-touch .info i {
+    padding: 5% 5% 0% 0%;
+  }
+  .contact__get-in-touch .info p {
+    font-size: 14px;
+    margin: 0%;
+  }
+  .contact__contact-form h2 {
+    padding-top: 8%;
+  }
+  .contact__contact-form .form {
+    grid-template-columns: 1fr;
+  }
+  .contact__contact-form .form .name #name {
+    height: 40%;
+    font-size: 14px;
+    margin-bottom: 5%;
+    padding: 0% 0% 2% 0%;
+  }
+  .contact__contact-form .form .mail #email {
+    height: 40%;
+    font-size: 14px;
+    margin-bottom: 5%;
+    padding: 0% 0% 2% 0%;
+  }
+  .contact__contact-form .form .message #message {
+    font-size: 14px;
+    height: 150px;
+  }
+  .contact__contact-form .form .submit-button {
+    font-size: 14px;
+    margin-bottom: 8%;
+  }
+  .map .map-medium {
+    display: none;
+  }
+  .map .map-large {
+    display: none;
+  }
+}
+@media (min-width: 413px) and (max-width: 768px) {
+  .contact {
+    padding: 15% 0;
+    grid-template-columns: 1fr 2fr;
+  }
+  .contact h2 {
+    font-size: 21px;
+  }
+  .contact__get-in-touch {
+    grid-column: 1/2;
+    padding-right: 5%;
+  }
+  .contact__get-in-touch .info {
+    grid-column-gap: 6%;
+    grid-row-gap: 10%;
+  }
+  .contact__get-in-touch .info i {
+    font-size: 32px;
+  }
+  .contact__get-in-touch .info p {
+    font-size: 14px;
+  }
+  .contact__contact-form {
+    grid-column: 2/4;
+  }
+  .contact__contact-form .form {
+    grid-column-gap: 5%;
+  }
+  .contact__contact-form .form .name #name {
+    font-size: 14px;
+  }
+  .contact__contact-form .form .mail #email {
+    font-size: 14px;
+  }
+  .contact__contact-form .form .message #message {
+    font-size: 14px;
+    height: 150px;
+  }
+  .contact__contact-form .form .submit-button {
+    font-size: 14px;
+  }
+  .map .map-small {
+    display: none;
+  }
+  .map .map-large {
+    display: none;
+  }
+  .map img {
+    top: 38%;
+    left: 44%;
+  }
+}
+@media (min-width: 769px) {
+  .contact {
+    padding: 10% 15%;
+    grid-template-columns: 1fr 2fr;
+  }
+  .contact__get-in-touch {
+    grid-column: 1/2;
+    padding-right: 12%;
+  }
+  .contact__get-in-touch p {
+    font-size: 20px;
+  }
+  .contact__get-in-touch .info {
+    grid-column-gap: 6%;
+    grid-row-gap: 10%;
+  }
+  .contact__get-in-touch .info p {
+    font-size: 20px;
+  }
+  .contact__contact-form {
+    grid-column: 2/4;
+  }
+  .contact__contact-form .form {
+    grid-column-gap: 5%;
+  }
+  .contact__contact-form .form .message #message {
+    height: 200px;
+  }
+  .map .map-medium {
+    display: none;
+  }
+  .map .map-small {
+    display: none;
+  }
+  .map img {
+    top: 40%;
+    left: 48%;
+  }
+}
 .header {
   background-image: url("./images/gallery/slide-1.jpg");
   background-repeat: no-repeat;
@@ -503,10 +783,6 @@
 #header-gallery .header-right .a button:hover,
 #header-gallery .header-right .c button:hover {
   padding: 3px 30px;
-}
-
-* {
-  margin: 0;
 }
 
 .topnav {

@@ -1,0 +1,78 @@
+@use '../Abstracts/variables';
+
+@media (min-width: 769px) {
+    .contact {
+        padding: 10% 15%;
+        grid-template-columns: 1fr 2fr;
+
+        &__get-in-touch {
+            grid-column: 1 / 2;
+            padding-right: 12%;
+
+            p {
+                font-size: 20px;
+            }
+
+            .info {
+                grid-column-gap: 6%;
+                grid-row-gap: 10%;
+
+                .email {}
+
+                i {}
+
+                p {
+                    font-size: 20px;
+                }
+            }
+        }
+
+        &__contact-form {
+            grid-column: 2 / 4;
+
+            .form {
+                grid-column-gap: 5%;
+
+                .name {
+                    #name {
+                        &:hover {}
+
+                        &::placeholder {}
+
+                    }
+                }
+
+                .mail {
+                    #email {
+                        &::placeholder {}
+                    }
+                }
+
+                .message {
+                    #message {
+                        height: 200px;
+
+                        &::placeholder {}
+                    }
+                }
+
+                .submit-button {}
+            }
+        }
+    }
+
+    .map {
+        .map-medium {
+            display: none;
+        }
+
+        .map-small {
+            display: none;
+        }
+
+        img {
+            top: 40%;
+            left: 48%;
+        }
+    }
+}
