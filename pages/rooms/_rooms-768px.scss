@@ -1,0 +1,16 @@
+@media (max-width: 769px) {
+    .rooms__header{
+        h1{
+            font-size: $m-H1;
+            span {
+                font-size: $m-H1;
+                margin: 0;
+            }
+        }
+        ul {
+            font-size: 12px;
+        }
+    
+    }
+  }
+  

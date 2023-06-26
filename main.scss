@@ -13,7 +13,6 @@
 @use "layout/header-768";
 @use "layout/header-1920";
 
-
 @import "./pages/page-blog/_blog-412px.scss";
 @import "./pages/page-blog/_blog-768px.scss";
 @import "./pages/page-blog/_blog-1920px.scss";
@@ -21,5 +20,6 @@
 @import "./Abstracts/mixin";
 @import "./Abstracts/variables";
 @import "./pages/page-blog/blog-main";
+
 @import "./pages/page-accueil/page-accueil-main";
 @import "./layout/navbar";

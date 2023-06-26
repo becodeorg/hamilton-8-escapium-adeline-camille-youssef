@@ -1,0 +1,120 @@
+
+.rooms {
+    margin: 0%;
+    background-color: $darkest-backgrounds;
+    a {
+        text-decoration: none;
+    }
+
+    ul {
+        list-style: none;
+    }
+    .button-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+      }
+
+    button {
+        background-color: transparent;
+        border: 1px solid $global-font-color;
+        color: $white-background;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 25px;
+        cursor: pointer;
+        margin: 2vw;
+      }
+  
+      button:hover {
+        border: 1px solid $red;
+        background-color: $red;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+    
+}
+  
+.rooms__header {
+    background-image: url(../images/gallery/slide-1.jpg);
+    background-size: cover;
+    background-position: center center;
+    font-family: $fontHeadings;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        font-size: $bs-H1;
+        color: $white-background;
+        padding-top: 5%;
+
+        span {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: $red;
+            font-size: 145px;
+            margin-left: -47px;
+        }
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-size: 27px;
+        padding: 0%;
+        margin-bottom: 35%;
+
+        li {
+            color: $white-background;
+        }
+    }
+
+    hr {
+        width: 15px;
+        height: 3px;
+        background-color: $global-font-color;
+        border: none;
+        margin: 10px;
+    }
+}
+
+.card:hover{
+  background-size: 110%;
+  
+}
+.card {
+    margin: 0%;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    font-family: $FontParagraphs;
+  }
+  
+  .card-content:hover{
+background-size: 110%;
+  }
+
+  ul {
+    display: flex;
+    padding: 0%;
+    li {
+        margin: 2px;
+    }
+  }
+  h2 {
+    color: #ffffff;
+    font-size: 20px;
+    margin: 2%;
+  }
+  
+  p {
+    color: $global-font-color;
+    font-size: 14px;
+  }
+  
+  
